@@ -35,7 +35,7 @@
     //[revealController tapGestureRecognizer];
     
     self.menuIDs = @[@"events", @"map", @"terms", @"contacts",@"faq"];
-    self.menuTitles = @[@"Schedule", @"Campus Map", @"Speak Carleton", @"Important Contacts",@"FAQ"];
+    self.menuTitles = @[@"Schedule", @"Campus Map", @"Twitter Feed", @"Important Contacts",@"FAQs"];
 }
 
 
