@@ -179,14 +179,14 @@
 		E27C228C197D8E6600126171 /* FaqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaqViewController.m; sourceTree = "<group>"; };
 		E2841CBE195CA2F40082BDB2 /* ContactButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactButton.h; sourceTree = "<group>"; };
 		E2841CBF195CA2F40082BDB2 /* ContactButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactButton.m; sourceTree = "<group>"; };
-		E2842ABF191A9992007FBD9B /* Carleton NSW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carleton NSW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2842ABF191A9992007FBD9B /* Carleton Reunion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carleton Reunion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2842AC2191A9992007FBD9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2842AC4191A9992007FBD9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E2842AC6191A9992007FBD9B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E2842ACA191A9992007FBD9B /* Carleton NSW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Carleton NSW-Info.plist"; sourceTree = "<group>"; };
+		E2842ACA191A9992007FBD9B /* Carleton Reunion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Carleton Reunion-Info.plist"; sourceTree = "<group>"; };
 		E2842ACC191A9992007FBD9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2842ACE191A9992007FBD9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2842AD0191A9992007FBD9B /* Carleton NSW-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carleton NSW-Prefix.pch"; sourceTree = "<group>"; };
+		E2842AD0191A9992007FBD9B /* Carleton Reunion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carleton Reunion-Prefix.pch"; sourceTree = "<group>"; };
 		E2842AD1191A9992007FBD9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2842AD2191A9992007FBD9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E2842AD5191A9992007FBD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -194,9 +194,9 @@
 		E2842AD8191A9992007FBD9B /* EventListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventListViewController.m; sourceTree = "<group>"; };
 		E2842ADA191A9992007FBD9B /* EventDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
 		E2842ADD191A9992007FBD9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E2842AE3191A9992007FBD9B /* Carleton NSWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carleton NSWTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2842AE3191A9992007FBD9B /* Carleton ReunionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carleton ReunionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2842AE4191A9992007FBD9B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E2842AEC191A9992007FBD9B /* Carleton NSWTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Carleton NSWTests-Info.plist"; sourceTree = "<group>"; };
+		E2842AEC191A9992007FBD9B /* Carleton ReunionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Carleton ReunionTests-Info.plist"; sourceTree = "<group>"; };
 		E2842AEE191A9992007FBD9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2842AF0191A9992007FBD9B /* NSWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSWTests.m; sourceTree = "<group>"; };
 		E2DC71F319B54C1C00ED8C05 /* phone icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone icon.png"; sourceTree = "<group>"; };
@@ -315,8 +315,8 @@
 		E2842AC0191A9992007FBD9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2842ABF191A9992007FBD9B /* Carleton NSW.app */,
-				E2842AE3191A9992007FBD9B /* Carleton NSWTests.xctest */,
+				E2842ABF191A9992007FBD9B /* Carleton Reunion.app */,
+				E2842AE3191A9992007FBD9B /* Carleton ReunionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,10 +377,10 @@
 				8011D59019401C47001D9DBD /* phone1-25.png */,
 				8011D58E19400C77001D9DBD /* alarm_clock-25.png */,
 				8011D58C19400BB9001D9DBD /* clock-25.png */,
-				E2842ACA191A9992007FBD9B /* Carleton NSW-Info.plist */,
+				E2842ACA191A9992007FBD9B /* Carleton Reunion-Info.plist */,
 				E2842ACB191A9992007FBD9B /* InfoPlist.strings */,
 				E2842ACE191A9992007FBD9B /* main.m */,
-				E2842AD0191A9992007FBD9B /* Carleton NSW-Prefix.pch */,
+				E2842AD0191A9992007FBD9B /* Carleton Reunion-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 		E2842AEB191A9992007FBD9B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2842AEC191A9992007FBD9B /* Carleton NSWTests-Info.plist */,
+				E2842AEC191A9992007FBD9B /* Carleton ReunionTests-Info.plist */,
 				E2842AED191A9992007FBD9B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -502,9 +502,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2842ABE191A9991007FBD9B /* Carleton NSW */ = {
+		E2842ABE191A9991007FBD9B /* Carleton Reunion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2842AF4191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton NSW" */;
+			buildConfigurationList = E2842AF4191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton Reunion" */;
 			buildPhases = (
 				17B7233D53DB4F6CAA00E69B /* Check Pods Manifest.lock */,
 				E2842ABB191A9991007FBD9B /* Sources */,
@@ -516,14 +516,14 @@
 			);
 			dependencies = (
 			);
-			name = "Carleton NSW";
+			name = "Carleton Reunion";
 			productName = NSW;
-			productReference = E2842ABF191A9992007FBD9B /* Carleton NSW.app */;
+			productReference = E2842ABF191A9992007FBD9B /* Carleton Reunion.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E2842AE2191A9992007FBD9B /* Carleton NSWTests */ = {
+		E2842AE2191A9992007FBD9B /* Carleton ReunionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2842AF7191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton NSWTests" */;
+			buildConfigurationList = E2842AF7191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton ReunionTests" */;
 			buildPhases = (
 				E2842ADF191A9992007FBD9B /* Sources */,
 				E2842AE0191A9992007FBD9B /* Frameworks */,
@@ -534,9 +534,9 @@
 			dependencies = (
 				E2842AE9191A9992007FBD9B /* PBXTargetDependency */,
 			);
-			name = "Carleton NSWTests";
+			name = "Carleton ReunionTests";
 			productName = NSWTests;
-			productReference = E2842AE3191A9992007FBD9B /* Carleton NSWTests.xctest */;
+			productReference = E2842AE3191A9992007FBD9B /* Carleton ReunionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -556,7 +556,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E2842ABA191A9991007FBD9B /* Build configuration list for PBXProject "Carleton NSW" */;
+			buildConfigurationList = E2842ABA191A9991007FBD9B /* Build configuration list for PBXProject "Carleton Reunion" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -569,8 +569,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2842ABE191A9991007FBD9B /* Carleton NSW */,
-				E2842AE2191A9992007FBD9B /* Carleton NSWTests */,
+				E2842ABE191A9991007FBD9B /* Carleton Reunion */,
+				E2842AE2191A9992007FBD9B /* Carleton ReunionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -705,7 +705,7 @@
 /* Begin PBXTargetDependency section */
 		E2842AE9191A9992007FBD9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E2842ABE191A9991007FBD9B /* Carleton NSW */;
+			target = E2842ABE191A9991007FBD9B /* Carleton Reunion */;
 			targetProxy = E2842AE8191A9992007FBD9B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -823,9 +823,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSW/Carleton NSW-Prefix.pch";
-				INFOPLIST_FILE = "NSW/Carleton NSW-Info.plist";
-				PRODUCT_NAME = "Carleton NSW";
+				GCC_PREFIX_HEADER = "NSW/Carleton Reunion-Prefix.pch";
+				INFOPLIST_FILE = "NSW/Carleton Reunion-Info.plist";
+				PRODUCT_NAME = "Carleton Reunion";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -844,9 +844,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSW/Carleton NSW-Prefix.pch";
-				INFOPLIST_FILE = "NSW/Carleton NSW-Info.plist";
-				PRODUCT_NAME = "Carleton NSW";
+				GCC_PREFIX_HEADER = "NSW/Carleton Reunion-Prefix.pch";
+				INFOPLIST_FILE = "NSW/Carleton Reunion-Info.plist";
+				PRODUCT_NAME = "Carleton Reunion";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -867,8 +867,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "NSWTests/Carleton NSWTests-Info.plist";
-				PRODUCT_NAME = "Carleton NSWTests";
+				INFOPLIST_FILE = "NSWTests/Carleton ReunionTests-Info.plist";
+				PRODUCT_NAME = "Carleton ReunionTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -885,8 +885,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSW/NSW-Prefix.pch";
-				INFOPLIST_FILE = "NSWTests/Carleton NSWTests-Info.plist";
-				PRODUCT_NAME = "Carleton NSWTests";
+				INFOPLIST_FILE = "NSWTests/Carleton ReunionTests-Info.plist";
+				PRODUCT_NAME = "Carleton ReunionTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -895,7 +895,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E2842ABA191A9991007FBD9B /* Build configuration list for PBXProject "Carleton NSW" */ = {
+		E2842ABA191A9991007FBD9B /* Build configuration list for PBXProject "Carleton Reunion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2842AF2191A9992007FBD9B /* Debug */,
@@ -904,7 +904,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2842AF4191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton NSW" */ = {
+		E2842AF4191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton Reunion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2842AF5191A9992007FBD9B /* Debug */,
@@ -913,7 +913,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2842AF7191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton NSWTests" */ = {
+		E2842AF7191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton ReunionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2842AF8191A9992007FBD9B /* Debug */,

@@ -126,7 +126,7 @@
 
 // Updates the event list to the events for currentDate
 -(void)getEventsFromCurrentDate {
-    [myEventDS getEventsForDate:currentDate];
+    //[myEventDS getEventsForDate:currentDate];
 }
 
 #pragma mark - Table View
