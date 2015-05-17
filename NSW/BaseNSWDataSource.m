@@ -23,7 +23,7 @@ static BOOL dataIsReady;
 - (id)urlMap {
     if (!_urlMap) {
         NSArray *fileNames = @[@"events.ics", @"contacts.html", @"terms.json",@"faq.html"];
-        NSArray *urls = @[[NSURL URLWithString:@"https://apps.carleton.edu/newstudents/events/?start_date=2014-08-21&format=ical"],
+        NSArray *urls = @[[NSURL URLWithString:@"https://apps.carleton.edu/reunion/schedule/?start_date=2015-05-15&format=ical"],
                 [NSURL URLWithString:@"https://apps.carleton.edu/newstudents/contact/"],
                 [NSURL URLWithString:@"http://sgrinich.github.io/speak_carleton.json"],
                 // added this here
@@ -128,12 +128,14 @@ static BOOL dataIsReady;
     [downloadTask setDestinationDirectory:genericRawFilePath];
     [downloadTask setCompletionBlock:onCompletion];
 
-    if ([[NSFileManager defaultManager] fileExistsAtPath:pathToRawFile]){
-        onCompletion(YES, nil);
-        //TODO check how old the local data is, Then reload if more than a day
-    } else {
-        [downloadTask start];
-    }
+//    if ([[NSFileManager defaultManager] fileExistsAtPath:pathToRawFile]){
+//        onCompletion(YES, nil);
+//        //TODO check how old the local data is, Then reload if more than a day
+//    } else {
+//        [downloadTask start];
+//    }
+    
+    [downloadTask start];
     
 }
 
@@ -165,6 +167,7 @@ static BOOL dataIsReady;
                                                         error:&error];
         
         if (!error) {
+            NSLog(@"\n \n I am here \n \n");
             char utf8BOM[] = {0xEF, 0xBB, 0xBF}; //These 3 bytes represent the BOM for a UTF-8 text file
             NSMutableData *utf8Data = [NSMutableData dataWithBytes:utf8BOM length:3];
             [utf8Data appendData:originalData];

@@ -11,9 +11,19 @@ import UIKit
 
 class TwitterViewController: UIViewController {
 
+    @IBOutlet weak var revealButtonItem: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setNavigationColors()
+        self.navigationItem.title = "Twitter Feed"
+        revealButtonItem.target = self.revealViewController()
+        revealButtonItem.action = "revealToggle:"
+        
+        
+        
+        self.navigationController?.navigationBar.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +32,22 @@ class TwitterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+
+    func setNavigationColors() {
+        var navBar: UINavigationBar = self.navigationController!.navigationBar
+        navBar.translucent = false
+        navBar.barTintColor = NSWStyle.oceanBlueColor()
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName: NSWStyle.whiteColor(),
+            NSFontAttributeName: NSWStyle.boldFont()]
+        var barBtnItem: UIBarButtonItem = UIBarButtonItem(title: "", style: .Bordered, target: self, action: "popoverArrowDirection:")
+        self.navigationItem.backBarButtonItem = revealButtonItem
+        self.revealButtonItem.tintColor = NSWStyle.whiteColor()
+
+        
+        
+
+    }
 
     /*
     // MARK: - Navigation

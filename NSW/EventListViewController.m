@@ -126,7 +126,7 @@
 
 // Updates the event list to the events for currentDate
 -(void)getEventsFromCurrentDate {
-    //[myEventDS getEventsForDate:currentDate];
+    [myEventDS getEventsForDate:currentDate];
 }
 
 #pragma mark - Table View
@@ -157,7 +157,8 @@
     NSString *returningUserKey = @"returning user";
     //[NSUserDefaults resetStandardUserDefaults];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    BOOL isReturningUser = [userDefaults boolForKey:returningUserKey];
+    //BOOL isReturningUser = [userDefaults boolForKey:returningUserKey]; Disabled for testing
+    BOOL isReturningUser = false;
     if (!isReturningUser) {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome to Carleton!"
