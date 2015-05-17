@@ -572,7 +572,7 @@
             </objects>
             <point key="canvasLocation" x="1462" y="994"/>
         </scene>
-        <!--Twitter View Controller-->
+        <!--Twitter Feed-->
         <scene sceneID="lDR-Ox-vD9">
             <objects>
                 <viewController id="Hbt-6N-Qd2" customClass="TwitterViewController" customModule="Carleton_Reunion" customModuleProvider="target" sceneMemberID="viewController">
@@ -585,14 +585,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Twitter Feed" id="bD3-eV-tp8">
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="4Me-mn-dwU"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="revealButtonItem" destination="4Me-mn-dwU" id="YTg-S9-Rkl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="is7-Ye-PsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationItem title="Twitter Feed" id="bD3-eV-tp8">
-                    <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="4Me-mn-dwU"/>
-                </navigationItem>
             </objects>
             <point key="canvasLocation" x="-1249" y="1359"/>
         </scene>
