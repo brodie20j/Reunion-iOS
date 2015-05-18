@@ -232,12 +232,10 @@
 - (IBAction)calendarButton:(id)sender {
         
     UIActionSheet *popup = [[UIActionSheet alloc] initWithTitle:@"Select a day to jump to" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:
-                           @"Tuesday, September 9",
-                           @"Wednesday, September 10",
-                           @"Thursday, September 11",
-                           @"Friday, September 12",
-                           @"Saturday, September 13",
-                           @"Sunday, September 14",
+                           @"Thurday, June 18",
+                           @"Friday, June 19",
+                           @"Saturday, June 20",
+                           @"Sunday, June 21",
                            nil];
     popup.tag = 1;
     [popup showInView:[UIApplication sharedApplication].keyWindow];
@@ -254,7 +252,7 @@
 
     
     if(buttonIndex == 0){
-        dateString = @"2014-09-09";
+        dateString = @"2015-06-18";
         [self.tableView setContentOffset:CGPointZero animated:NO];
         currentDate = [formatter dateFromString:dateString];
         [self getEventsFromCurrentDate];
@@ -264,7 +262,7 @@
     }
     
     if(buttonIndex == 1){
-        dateString = @"2014-09-10";
+        dateString = @"2015-06-19";
         [self.tableView setContentOffset:CGPointZero animated:NO];
         currentDate = [formatter dateFromString:dateString];
         [self getEventsFromCurrentDate];
@@ -274,7 +272,7 @@
     }
     
     if(buttonIndex == 2){
-        dateString = @"2014-09-11";
+        dateString = @"2015-06-20";
         [self.tableView setContentOffset:CGPointZero animated:NO];
         currentDate = [formatter dateFromString:dateString];
         [self getEventsFromCurrentDate];
@@ -283,7 +281,7 @@
     }
     
     if(buttonIndex == 3){
-        dateString = @"2014-09-12";
+        dateString = @"2015-06-21";
         [self.tableView setContentOffset:CGPointZero animated:NO];
         currentDate = [formatter dateFromString:dateString];
         [self getEventsFromCurrentDate];
@@ -291,23 +289,6 @@
         [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
     }
     
-    if(buttonIndex == 4){
-        dateString = @"2014-09-13";
-        [self.tableView setContentOffset:CGPointZero animated:NO];
-        currentDate = [formatter dateFromString:dateString];
-        [self getEventsFromCurrentDate];
-        [self updateDateLabelToCurrentDate];
-        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
-    }
-    
-    if(buttonIndex == 5){
-        dateString = @"2014-09-14";
-        [self.tableView setContentOffset:CGPointZero animated:NO];
-        currentDate = [formatter dateFromString:dateString];
-        [self getEventsFromCurrentDate];
-        [self updateDateLabelToCurrentDate];
-        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
-    }
     
     else{
         
