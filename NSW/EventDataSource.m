@@ -5,6 +5,8 @@
 //  Created by Stephen Grinich on 5/9/14.
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
+//  ***Difficult to understand, probably will completely redo***
+//
 
 #import "EventDataSource.h"
 #import "NSWEvent.h"

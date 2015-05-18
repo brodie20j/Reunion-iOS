@@ -2,6 +2,8 @@
 // Created by Alex Simonides on 5/15/14.
 // Copyright (c) 2014 BTIN. All rights reserved.
 //
+// ***May or may not need for Carleton Reunion, depending on which classes we use in final version***
+//
 
 #import "BaseNSWTableViewController.h"
 #import "SWRevealViewController.h"

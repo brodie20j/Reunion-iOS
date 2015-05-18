@@ -8,13 +8,14 @@
 //  View Controller for the Twitter feed
 
 import UIKit
-
 class TwitterViewController: UIViewController {
 
     @IBOutlet weak var revealButtonItem: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set up navigation bar
         self.setNavigationColors()
         self.navigationItem.title = "Twitter Feed"
         revealButtonItem.target = self.revealViewController()
@@ -25,7 +26,15 @@ class TwitterViewController: UIViewController {
         self.navigationController?.navigationBar.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         // Do any additional setup after loading the view.
-    }
+        
+
+       
+        }
+    
+
+
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,7 +42,7 @@ class TwitterViewController: UIViewController {
     }
     
     
-
+    // Set navbar styling to consistent with rest of app
     func setNavigationColors() {
         var navBar: UINavigationBar = self.navigationController!.navigationBar
         navBar.translucent = false

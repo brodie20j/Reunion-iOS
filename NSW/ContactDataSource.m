@@ -6,6 +6,8 @@
 //  Added functionality by Stephen Grinich
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
+//  ***Need to redo for Carleton Reunion***
+//
 
 #import "ContactDataSource.h"
 #import "Contact.h"

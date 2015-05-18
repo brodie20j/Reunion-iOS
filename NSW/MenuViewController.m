@@ -2,6 +2,8 @@
 // Created by Alex Simonides on 5/19/14.
 // Copyright (c) 2014 BTIN. All rights reserved.
 //
+// ***Does not need modification for Carleton Reunion***
+//
 
 #import "MenuViewController.h"
 #import "SWRevealViewController.h"
@@ -35,7 +37,7 @@
     //[revealController tapGestureRecognizer];
     
     self.menuIDs = @[@"events", @"map", @"terms", @"contacts",@"faq"];
-    self.menuTitles = @[@"Schedule", @"Campus Map", @"Twitter Feed", @"Important Contacts",@"FAQs"];
+    self.menuTitles = @[@"Schedule", @"Campus Map", @"Twitter Feed", @"Faculty Listing",@"FAQs"];
 }
 
 
@@ -86,6 +88,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return tableView.rowHeight;
+ 
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section

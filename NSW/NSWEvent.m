@@ -5,6 +5,8 @@
 //  Created by Alex Simonides on 5/10/14.
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
+//  ***Good to use for Carleton Reunion***
+//
 
 #import "NSWEvent.h"
 

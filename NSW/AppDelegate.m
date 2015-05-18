@@ -13,6 +13,7 @@
 #import "NSWConstants.h"
 #import "SWRevealViewController.h"
 
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -33,6 +34,7 @@
     
     // Initialize the singleton downloader
     [FLDownloader sharedDownloader];
+    
     
     
     
@@ -85,6 +87,8 @@
     // Set icon badge number to zero
     application.applicationIconBadgeNumber = 0;
 }
+
+
 
 
 @end

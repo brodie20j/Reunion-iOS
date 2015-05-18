@@ -5,6 +5,8 @@
 //  Created by Lab User on 6/3/14.
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
+//  ***Does not need additional work for Carleton Reunion***
+//
 
 #import "GoogleMapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>

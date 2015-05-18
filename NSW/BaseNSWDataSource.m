@@ -2,6 +2,8 @@
 // Created by Alex Simonides on 5/15/14.
 // Copyright (c) 2014 BTIN. All rights reserved.
 //
+//  ***Difficult to understand/alter. Probably will completely redo***
+//
 
 #import "BaseNSWDataSource.h"
 #import "FLDownloader.h"

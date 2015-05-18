@@ -6,6 +6,8 @@
 //  Added/fixed functionality by Stephen Grinich
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
+//  ***Needs serious adjustment for Carleton Reunion***
+//
 
 #import "ContactTableViewController.h"
 #import "ContactTableViewCell.h"

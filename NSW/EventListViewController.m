@@ -5,6 +5,8 @@
 //  Created by Stephen Grinich on 5/7/14.
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
+//  ***Needs serious adjustment/to be rewritten for Carleton Reunion***
+//
 
 #import "EventListViewController.h"
 
@@ -17,6 +19,7 @@
 #import "iToast.h"
 #import "NSWConstants.h"
 #import "SWRevealViewController.h"
+
 
 
 @interface EventListViewController () {
@@ -126,7 +129,8 @@
 
 // Updates the event list to the events for currentDate
 -(void)getEventsFromCurrentDate {
-    [myEventDS getEventsForDate:currentDate];
+    // Commented out to stop event list from populating with NSW events
+    //[myEventDS getEventsForDate:currentDate];
 }
 
 #pragma mark - Table View
@@ -158,7 +162,7 @@
     //[NSUserDefaults resetStandardUserDefaults];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     //BOOL isReturningUser = [userDefaults boolForKey:returningUserKey]; Disabled for testing
-    BOOL isReturningUser = false;
+    BOOL isReturningUser = true;
     if (!isReturningUser) {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome to Carleton!"
@@ -168,7 +172,7 @@
                                               otherButtonTitles:nil];
         [alert show];
 
-        [userDefaults setBool:YES forKey:returningUserKey];
+        [userDefaults setBool:NO forKey:returningUserKey];
     } else {
         //[userDefaults setBool:NO forKey:returningUserKey];
     }
