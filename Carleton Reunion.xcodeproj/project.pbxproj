@@ -44,6 +44,7 @@
 		8011D58F19400C77001D9DBD /* alarm_clock-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8011D58E19400C77001D9DBD /* alarm_clock-25.png */; };
 		8011D59119401C47001D9DBD /* phone1-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8011D59019401C47001D9DBD /* phone1-25.png */; };
 		B9E283BA1B07A0B200F54F33 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E283B91B07A0B200F54F33 /* TwitterViewController.swift */; };
+		BAB5F4C11B0D89BA005FAA67 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = BAB5F4C01B0D89BA005FAA67 /* Pods */; };
 		D69711B7193FB0D90092FA6D /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69711B6193FB0D90092FA6D /* GoogleMaps.framework */; };
 		E21CDE74191D47BF00884608 /* EventDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E21CDE73191D47BF00884608 /* EventDataSource.m */; };
 		E220AD2A196C6AB00062BB40 /* CarlTermDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E220AD29196C6AB00062BB40 /* CarlTermDetailViewController.m */; };
@@ -156,6 +157,7 @@
 		8011D59019401C47001D9DBD /* phone1-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone1-25.png"; sourceTree = "<group>"; };
 		B9E283B81B07A0B200F54F33 /* Carleton Reunion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carleton Reunion-Bridging-Header.h"; sourceTree = "<group>"; };
 		B9E283B91B07A0B200F54F33 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		BAB5F4C01B0D89BA005FAA67 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
 		D69711B6193FB0D90092FA6D /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		E21CDE72191D47BF00884608 /* EventDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDataSource.h; sourceTree = "<group>"; };
 		E21CDE73191D47BF00884608 /* EventDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDataSource.m; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 		1E7C70D2BF900C9B580172F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				BAB5F4C01B0D89BA005FAA67 /* Pods */,
 				2FA16562893AA81C1DECA3AA /* Pods.debug.xcconfig */,
 				47DC1A96B2AC8D0985683A74 /* Pods.release.xcconfig */,
 			);
@@ -511,11 +514,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2842AF4191A9992007FBD9B /* Build configuration list for PBXNativeTarget "Carleton Reunion" */;
 			buildPhases = (
-				17B7233D53DB4F6CAA00E69B /* Check Pods Manifest.lock */,
 				E2842ABB191A9991007FBD9B /* Sources */,
 				E2842ABC191A9991007FBD9B /* Frameworks */,
 				E2842ABD191A9991007FBD9B /* Resources */,
-				453A1052505C45A285C65524 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -587,6 +588,7 @@
 			files = (
 				FA9DFDDD1921BDD200FC3A81 /* map.jpg in Resources */,
 				E2DC71F819B54C5000ED8C05 /* NSW Splash Screen.png in Resources */,
+				BAB5F4C11B0D89BA005FAA67 /* Pods in Resources */,
 				68E045E3191FF6B100B36423 /* events_old.ics in Resources */,
 				E2217A8E19B552670017CBD4 /* calendarbutton.png in Resources */,
 				E2DC71FE19B54C7200ED8C05 /* up arrow.png in Resources */,
@@ -619,39 +621,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		17B7233D53DB4F6CAA00E69B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		453A1052505C45A285C65524 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2842ABB191A9991007FBD9B /* Sources */ = {
