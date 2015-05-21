@@ -309,8 +309,8 @@
 		E2842AB6191A9991007FBD9B = {
 			isa = PBXGroup;
 			children = (
-				E2842AC8191A9992007FBD9B /* NSW */,
-				E2842AEA191A9992007FBD9B /* NSWTests */,
+				E2842AC8191A9992007FBD9B /* Reunion */,
+				E2842AEA191A9992007FBD9B /* ReunionTests */,
 				E2842AC1191A9992007FBD9B /* Frameworks */,
 				E2842AC0191A9992007FBD9B /* Products */,
 				2DBA117A9E3FC69E8A187ED8 /* third-party */,
@@ -353,7 +353,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E2842AC8191A9992007FBD9B /* NSW */ = {
+		E2842AC8191A9992007FBD9B /* Reunion */ = {
 			isa = PBXGroup;
 			children = (
 				FA9DFDE31921C36900FC3A81 /* Common */,
@@ -365,6 +365,7 @@
 				E2842AC9191A9992007FBD9B /* Supporting Files */,
 				2DBA1BB93B02090DFFAF7DAA /* ViewCells */,
 			);
+			name = Reunion;
 			path = NSW;
 			sourceTree = "<group>";
 		};
@@ -391,12 +392,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E2842AEA191A9992007FBD9B /* NSWTests */ = {
+		E2842AEA191A9992007FBD9B /* ReunionTests */ = {
 			isa = PBXGroup;
 			children = (
 				E2842AF0191A9992007FBD9B /* NSWTests.m */,
 				E2842AEB191A9992007FBD9B /* Supporting Files */,
 			);
+			name = ReunionTests;
 			path = NSWTests;
 			sourceTree = "<group>";
 		};
