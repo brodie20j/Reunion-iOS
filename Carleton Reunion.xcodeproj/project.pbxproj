@@ -837,7 +837,7 @@
 		E2842AF8191A9992007FBD9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Carleton NSW.app/NSW";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Carleton Reunion.app/NSW";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -859,7 +859,7 @@
 		E2842AF9191A9992007FBD9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Carleton NSW.app/NSW";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Carleton Reunion.app/NSW";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
