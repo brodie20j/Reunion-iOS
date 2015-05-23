@@ -27,8 +27,8 @@ class TwitterViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-
-       
+        var parser: ICSParser = ICSParser()
+        
         }
     
 
