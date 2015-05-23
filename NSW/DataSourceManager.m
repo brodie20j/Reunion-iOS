@@ -5,10 +5,10 @@
 
 #import "DataSourceManager.h"
 #import "EventDataSource.h"
-
+#import "Carleton_Reunion-Swift.h"
 
 @interface DataSourceManager ()
-    @property EventDataSource *eventDataSource;
+    @property NewEventDataSource *eventDataSource;
     @property ContactDataSource *contactDataSource;
     @property CarlTermDataSource *carlTermDataSource;
     @property FaqDataSource *faqDataSource;
@@ -38,10 +38,10 @@ static DataSourceManager *sharedDSManager = nil;
 - (id)initPrivate {
     NSLog(@"Data Source Manager initialized.");
     if (self = [super init]) {
-        self.eventDataSource = [[EventDataSource alloc] init];
-        self.contactDataSource = [[ContactDataSource alloc] init];
-        self.carlTermDataSource = [[CarlTermDataSource alloc] init];
-        self.faqDataSource = [[FaqDataSource alloc] init];
+        self.eventDataSource = [[NewEventDataSource alloc] init];
+//        self.contactDataSource = [[ContactDataSource alloc] init];
+//        self.carlTermDataSource = [[CarlTermDataSource alloc] init];
+//        self.faqDataSource = [[FaqDataSource alloc] init];
     }
     return self;
 }

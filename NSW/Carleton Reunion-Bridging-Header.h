@@ -8,3 +8,4 @@
 #import "NSWStyle.h"
 #import "CGICalendar.h"
 #import "MXLCalendarManager.h"
+#import "NSWEvent.h"

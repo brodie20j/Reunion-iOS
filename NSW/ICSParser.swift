@@ -9,10 +9,10 @@
 import Foundation
 
 @objc class ICSParser: NSObject {
-    var fullEventList : 
     
     
-    override init() {
+    
+    init(eventDataSource: NewEventDataSource) {
         let path = NSBundle.mainBundle().pathForResource("schedule", ofType: "ics")
         var err : NSError?
         var content = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: &err)
@@ -28,11 +28,12 @@ import Foundation
         
         
         calendarManager.parseICSString(content, withCompletionHandler: { (calendar: MXLCalendar!, error: NSError!) -> Void in
+            print(calendar.events[0].title)
+            print("/n Time to populate event list")
+            eventDataSource.populateEventList(calendar)
         })
-        
-        
-        
     }
+    
     
     
 
