@@ -81,6 +81,8 @@ typedef enum {
 @property (strong, nonatomic) NSDate *eventCreatedDate;
 @property (strong, nonatomic) NSDate *eventLastModifiedDate;
 
+@property (assign) NSTimeInterval eventDuration;
+
 @property (assign, nonatomic) BOOL eventIsAllDay;
 
 @property (strong, nonatomic) NSString *eventUniqueID;
@@ -89,6 +91,7 @@ typedef enum {
 @property (strong, nonatomic) NSString *eventDescription;
 @property (strong, nonatomic) NSString *eventLocation;
 @property (strong, nonatomic) NSString *eventStatus;
+
 @property (strong, nonatomic) NSArray<MXLCalendarAttendee> *attendees;
 
 @property (strong, nonatomic) NSString *rruleString;
@@ -107,6 +110,7 @@ typedef enum {
         exceptionDates:(NSMutableArray *)exceptionDates
          exceptionRule:(NSString *)exceptionRule
     timeZoneIdentifier:(NSString *)timezoneID
+              duration:(NSString *)durationString
              attendees:(NSArray<MXLCalendarAttendee> *)attendees;
 
 -(NSDate *)dateFromString:(NSString *)dateString;

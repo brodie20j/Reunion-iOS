@@ -136,6 +136,7 @@
         NSString *endDateTimeString;
         NSString *eventUniqueIDString;
         NSString *recurrenceIDString;
+        
         NSString *createdDateTimeString;
         NSString *descriptionString;
         NSString *lastModifiedDateTimeString;
@@ -147,6 +148,9 @@
         NSString *timeStampString;
         NSString *repetitionString;
         NSString *exceptionRuleString;
+        
+        
+        
         NSMutableArray *exceptionDates = [[NSMutableArray alloc] init];
         NSMutableArray<MXLCalendarAttendee> *attendees = (NSMutableArray<MXLCalendarAttendee> *)[[NSMutableArray alloc] init];
 
@@ -183,6 +187,23 @@
                 startDateTimeString = [[startDateTimeString stringByReplacingOccurrencesOfString:@"DTSTART;VALUE=DATE:" withString:@""] stringByReplacingOccurrencesOfString:@"\r" withString:@""];
             }
         }
+        
+        // Edited for Reunion
+        NSString *durationString;
+        
+        
+        // Extract duration
+        
+        eventScanner = [NSScanner scannerWithString:event];
+        [eventScanner scanUpToString:[NSString stringWithFormat:@"DURATION:"] intoString:nil];
+        [eventScanner scanUpToString:@"\n" intoString:&durationString];
+        durationString = [[[durationString stringByReplacingOccurrencesOfString:@"DURATION:" withString:@""]
+                          stringByReplacingOccurrencesOfString:@"\r" withString:@""] stringByReplacingOccurrencesOfString:@"PT" withString:@""];
+        
+        
+        
+        
+        
         
         // Extract end time
         eventScanner = [NSScanner scannerWithString:event];
@@ -333,6 +354,7 @@
                                                                exceptionDates:exceptionDates
                                                                 exceptionRule:exceptionRuleString
                                                            timeZoneIdentifier:timezoneIDString ? timezoneIDString : calendarString
+                                                              duration:durationString
                                                                     attendees:attendees];
         [calendar addEvent:event];
 

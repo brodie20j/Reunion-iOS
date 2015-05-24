@@ -27,6 +27,7 @@
 
 #import "MXLCalendarEvent.h"
 #import <EventKit/EventKit.h>
+#import "NSWConstants.h"
 
 #define DAILY_FREQUENCY @"DAILY"
 #define WEEKLY_FREQUENCY @"WEEKLY"
@@ -40,6 +41,7 @@
 @end
 
 @implementation MXLCalendarEvent
+
 
 -(id)initWithStartDate:(NSString *)startString
                endDate:(NSString *)endString
@@ -55,6 +57,7 @@
         exceptionDates:(NSMutableArray *)exceptionDates
          exceptionRule:(NSString *)exceptionRule
     timeZoneIdentifier:(NSString *)timezoneID
+              duration:(NSString *) durationString
              attendees:(NSArray<MXLCalendarAttendee> *)attendees {
 
     self = [super init];
@@ -75,6 +78,19 @@
         self.eventCreatedDate = [self dateFromString:createdString];
         self.eventLastModifiedDate = [self dateFromString:lastModifiedString];
 
+        NSArray *matches = [durationString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"HMS"]];
+        
+        NSNumber *hours = matches[0];
+        NSNumber *minutes = matches[1];
+        NSNumber *seconds = matches[2];
+        
+        double timeInterval = ([hours doubleValue]*secondsPerHour +
+                               [minutes doubleValue]*secondsPerMinute +
+                               [seconds doubleValue]);
+        
+        self.eventDuration = timeInterval;
+
+        
         self.rruleString = recurRules;
 
         [self parseRules:recurRules    forType:MXLCalendarEventRuleTypeRepetition];
@@ -88,6 +104,7 @@
         self.eventLocation = [location stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         self.eventStatus = status;
         self.attendees = attendees;
+        
 
     }
     return self;

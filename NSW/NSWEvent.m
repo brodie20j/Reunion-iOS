@@ -15,7 +15,7 @@
 @synthesize calendarID;
 @synthesize title;
 @synthesize theDescription;
-@synthesize location;
+@synthesize locationString;
 @synthesize startDateTime;
 @synthesize duration;
 
@@ -31,7 +31,7 @@
 -(id)initWithID:(NSString *) id_
           Title:(NSString *)title_
     Description:(NSString *)desc_
-       Location:(NSString *)location_
+       Location:(NSString *)locationString_
           Start:(NSDate *)start_
        Duration:(NSTimeInterval)duration_
 {
@@ -40,7 +40,7 @@
         self.calendarID = id_;
         self.title = title_;
         self.theDescription = desc_;
-        self.location = location_;
+        self.locationString = locationString_;
         self.startDateTime = start_;
         self.startDateComponents = [NSWEvent getDateComponentsFromDate:start_];
         self.duration = duration_;
@@ -52,7 +52,7 @@
 // This is a built-in function that's called when you try print an NSWEvent (like toString() in Java)
 -(NSString *) description {
     return [NSString stringWithFormat: @"NSWEvent: Title=%@, Description=%@, Location=%@, Start=%@, Duration=%f seconds.",
-                    title, theDescription, location, startDateTime, duration];
+                    title, theDescription, locationString, startDateTime, duration];
 }
 
 +(NSDateComponents *)getDateComponentsFromDate:(NSDate *) date{

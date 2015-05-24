@@ -70,7 +70,7 @@
         _eventDescription.layer.borderWidth = 0.25;
         _eventDescription.layer.cornerRadius = 15;
         [_eventDescription setTextContainerInset:UIEdgeInsetsMake(8, 10, 8, 10)]; // top, left, bottom, right
-        _eventLocation.text = [self.detailItem location];
+        _eventLocation.text = [self.detailItem locationString];
         
         
     

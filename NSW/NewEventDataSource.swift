@@ -11,6 +11,7 @@ import Foundation
 @objc class NewEventDataSource: NSObject {
     
     var fullEventList : NSMutableArray
+    var myTableViewController : EventListViewController?
     
     override init() {
         fullEventList = NSMutableArray()
@@ -20,15 +21,23 @@ import Foundation
     
     }
     
-    func populateEventList(calendar: MXLCalendar) {
-        for event in calendar.events {
-            print(event.title)
-//            var newEvent = NSWEvent(ID: event.identifier, title: event.title, description: event.description, location: event.location, start: event.startDateTime, duration: event.duration)
-//            self.fullEventList.addObject(newEvent)
-        }
-        print("\n \n")
-        print("Event list populated")
-        print("\n \n")
+    func populateEventList(eventList: NSMutableArray?) {
+        self.fullEventList = eventList!
+        
 
     }
-}
+    
+    
+    // Used by EventListViewController
+    func attachVCBackref(tableViewController: EventListViewController) {
+            myTableViewController = tableViewController
+        
+        
+        self.myTableViewController!.setVCArrayToDataSourceArray(self.fullEventList as [AnyObject])
+        
+        
+        }
+    
+    
+    }
+

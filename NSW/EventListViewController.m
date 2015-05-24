@@ -44,9 +44,9 @@
 
     
     NSDateComponents *comps = [[NSDateComponents alloc] init];
-    [comps setDay:9];
-    [comps setMonth:9];
-    [comps setYear:2014];
+    [comps setDay:6];
+    [comps setMonth:18];
+    [comps setYear:2015];
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *startDate = [gregorian dateFromComponents:comps];
@@ -78,6 +78,8 @@
 
     
     [myEventDS attachVCBackref:self];
+    
+
     
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
 

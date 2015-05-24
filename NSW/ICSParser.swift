@@ -28,9 +28,16 @@ import Foundation
         
         
         calendarManager.parseICSString(content, withCompletionHandler: { (calendar: MXLCalendar!, error: NSError!) -> Void in
-            print(calendar.events[0].title)
-            print("/n Time to populate event list")
-            eventDataSource.populateEventList(calendar)
+            var events = calendar.events
+            var nswEvents = NSMutableArray()
+            for event in events {
+                var theEvent = event as! MXLCalendarEvent
+                
+                
+                
+                var newEvent = NSWEvent(ID: theEvent.eventUniqueID, title: theEvent.eventSummary, description: theEvent.eventDescription, location: theEvent.eventLocation, start: theEvent.eventStartDate, duration: event.eventDuration)
+            }
+            eventDataSource.populateEventList(nswEvents)
         })
     }
     
