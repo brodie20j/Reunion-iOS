@@ -34,8 +34,8 @@ import Foundation
                 var theEvent = event as! MXLCalendarEvent
                 
                 
-                
                 var newEvent = NSWEvent(ID: theEvent.eventUniqueID, title: theEvent.eventSummary, description: theEvent.eventDescription, location: theEvent.eventLocation, start: theEvent.eventStartDate, duration: event.eventDuration)
+                nswEvents.addObject(newEvent)
             }
             eventDataSource.populateEventList(nswEvents)
         })

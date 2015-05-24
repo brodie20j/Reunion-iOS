@@ -79,6 +79,7 @@
     
     [myEventDS attachVCBackref:self];
     
+    
 
     
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
