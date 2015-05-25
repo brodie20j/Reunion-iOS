@@ -52,9 +52,9 @@
     NSDate *startDate = [gregorian dateFromComponents:comps];
     
     NSDateComponents *comps2 = [[NSDateComponents alloc] init];
-    [comps2 setDay:15];
-    [comps2 setMonth:9];
-    [comps2 setYear:2014];
+    [comps2 setDay:21];
+    [comps2 setMonth:6];
+    [comps2 setYear:2015];
     
     NSDate *endDate = [gregorian dateFromComponents:comps2];
     
@@ -132,8 +132,7 @@
 
 // Updates the event list to the events for currentDate
 -(void)getEventsFromCurrentDate {
-    // Commented out to stop event list from populating with NSW events
-    //[myEventDS getEventsForDate:currentDate];
+    [myEventDS getEventsForDate:currentDate];
 }
 
 #pragma mark - Table View
@@ -213,7 +212,6 @@
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"YYYY-MM-dd"];
         NSString *currentDateString =[formatter stringFromDate:currentDate];
-        NSLog(currentDateString);
     
         NSString *toDateString = [formatter stringFromDate:[NSWConstants firstDayOfNSW]];
     

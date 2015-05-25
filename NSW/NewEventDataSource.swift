@@ -14,9 +14,8 @@ import Foundation
     var myTableViewController : EventListViewController?
     
     override init() {
-        fullEventList = NSMutableArray()
+        self.fullEventList = NSMutableArray()
         super.init()
-        
         let parser = ICSParser(eventDataSource: self)
     
     }
@@ -31,12 +30,19 @@ import Foundation
     // Used by EventListViewController
     func attachVCBackref(tableViewController: EventListViewController) {
             myTableViewController = tableViewController
-        
-        
-        self.myTableViewController!.setVCArrayToDataSourceArray(self.fullEventList as [AnyObject])
-        
-        
+            self.myTableViewController!.setVCArrayToDataSourceArray(self.fullEventList as [AnyObject])
         }
+    
+    func getEventsForDate(currentDate: NSDate) {
+        var currentDateComps: NSDateComponents = NSWEvent.getDateComponentsFromDate(currentDate)
+        var predicateFormat: NSString = "startDateComponents.day = \(currentDateComps.day) && startDateComponents.month == \(currentDateComps.month) && startDateComponents.year == \(currentDateComps.year)"
+        var dateMatchesCurrent: NSComparisonPredicate = NSComparisonPredicate(format: predicateFormat as String)
+        var todaysEvents: NSArray = self.fullEventList.filteredArrayUsingPredicate(dateMatchesCurrent)
+        
+        self.myTableViewController?.setVCArrayToDataSourceArray(todaysEvents as [AnyObject])
+        
+        
+    }
     
     
     }
