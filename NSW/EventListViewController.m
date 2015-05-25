@@ -5,7 +5,7 @@
 //  Created by Stephen Grinich on 5/7/14.
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
-//  ***Needs serious adjustment/to be rewritten for Carleton Reunion***
+//  Slightly modified for use in Carleton Reunion
 //
 
 #import "EventListViewController.h"
@@ -151,11 +151,11 @@
     
     
     NSString *current = [time stringFromDate:currentDate];
-    NSString *currentDate = [current stringByReplacingOccurrencesOfString:@"0" withString:@""];
+    NSString *currentDateString = [current stringByReplacingOccurrencesOfString:@"0" withString:@""];
                                   
-    currentDate = [NSString stringWithFormat:@"%@", dayName];
+    currentDateString = [NSString stringWithFormat:@"%@", dayName];
                                   
-    self.navigationController.navigationBar.topItem.title = currentDate;
+    self.navigationController.navigationBar.topItem.title = currentDateString;
     
 }
 
@@ -188,8 +188,6 @@
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"YYYY-MM-dd"];
-    NSLog([formatter stringFromDate:currentDate]);
-    NSLog([formatter stringFromDate:[NSWConstants firstDayOfNSW]]);
 
     NSString *currentDateString =[formatter stringFromDate:currentDate];
     NSString *toDateString = [formatter stringFromDate:[NSWConstants lastDayOfNSW]];

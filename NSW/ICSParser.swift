@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 BTIN. All rights reserved.
 //
 //  Creates NSWEvent objects for use by NewEventDataSource.
-//
+//  Uses modified MXLCalendar library by Kiran Panesar to parse iCalendar files
+//  https://github.com/KiranPanesar/MXLCalendarManager
 
 import Foundation
 
@@ -23,12 +24,8 @@ import Foundation
         var calendarManager = MXLCalendarManager()
         
         
-        var dateFormatter = NSDateFormatter()
-        dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        dateFormatter.dateFormat = "dd MM yyyy"
-        var date = dateFormatter.dateFromString("18 06 2015")
-        
-        
+        // This is asynchronous, race condition possible? Would have to rewrite much of third party library to not use
+        // callback functions.
         calendarManager.parseICSString(content, withCompletionHandler: { (calendar: MXLCalendar!, error: NSError!) -> Void in
             var events = calendar.events
             var nswEvents = NSMutableArray()

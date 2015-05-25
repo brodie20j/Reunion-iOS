@@ -192,9 +192,6 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     [dateFormatter setDateFormat:@"MMMM d"];
-    NSString *startDateTimeString = [dateFormatter stringFromDate:[self.detailItem startDateTime]];
-    NSLog(startDateTimeString);
-    
     
     
     NSDate *now = [NSDate date];

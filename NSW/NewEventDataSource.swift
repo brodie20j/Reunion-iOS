@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 BTIN. All rights reserved.
 //
 //  Data source for EventListViewController. Works in concert with ICSParser to parse schedule.ics for events
-//
 
 import Foundation
 
@@ -24,8 +23,6 @@ import Foundation
     
     func populateEventList(eventList: NSMutableArray?) {
         self.fullEventList = eventList!
-        
-
     }
     
     
@@ -46,11 +43,8 @@ import Foundation
     
     func eventsSortedByTime(unsortedEvents: NSArray)->NSArray {
         var sortDescriptor: NSSortDescriptor = NSSortDescriptor(key: "startDateTime", ascending: true)
-        
         var sortDescriptors = [sortDescriptor]
-        
         var sortedEvents: NSArray = unsortedEvents.sortedArrayUsingDescriptors(sortDescriptors as [AnyObject])
-        
         return sortedEvents
     }
     
