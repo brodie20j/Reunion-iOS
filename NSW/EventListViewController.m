@@ -44,8 +44,8 @@
 
     
     NSDateComponents *comps = [[NSDateComponents alloc] init];
-    [comps setDay:6];
-    [comps setMonth:18];
+    [comps setDay:18];
+    [comps setMonth:6];
     [comps setYear:2015];
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];
@@ -113,17 +113,18 @@
     NSString *current = [formatter stringFromDate:currentDate];
     
     // Changes "September 04" to "September 4" etc. for all dates. Doesn't matter for dates like "September 20" because NSW doesn't go that long
-    NSString *currentDate = [current stringByReplacingOccurrencesOfString:@"0" withString:@""];
+    NSString *currentDateString = [current stringByReplacingOccurrencesOfString:@"0" withString:@""];
     
     // nav bar ex: "Saturday, Sep 13"
     //currentDate = [NSString stringWithFormat:@"%@%@%@", dayName, @", ", currentDate];
     
     // nav bar ex: "Saturday"
-    currentDate = [NSString stringWithFormat:@"%@", dayName];
+    currentDateString = [NSString stringWithFormat:@"%@", dayName];
     
     // set title for navigation bar
-    self.navigationController.navigationBar.topItem.title = currentDate;
+    self.navigationController.navigationBar.topItem.title = currentDateString;
     
+    [myEventDS getEventsForDate:currentDate];
 }
 
 
