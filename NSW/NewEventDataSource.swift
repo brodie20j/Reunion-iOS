@@ -41,11 +41,18 @@ import Foundation
         var dateMatchesCurrent: NSComparisonPredicate = NSComparisonPredicate(format: predicateFormat as String)
         var todaysEvents: NSArray = self.fullEventList.filteredArrayUsingPredicate(dateMatchesCurrent)
         
-        self.myTableViewController?.setVCArrayToDataSourceArray(todaysEvents as [AnyObject])
-        
-        
+        self.myTableViewController?.setVCArrayToDataSourceArray(eventsSortedByTime(todaysEvents) as [AnyObject])
     }
     
+    func eventsSortedByTime(unsortedEvents: NSArray)->NSArray {
+        var sortDescriptor: NSSortDescriptor = NSSortDescriptor(key: "startDateTime", ascending: true)
+        
+        var sortDescriptors = [sortDescriptor]
+        
+        var sortedEvents: NSArray = unsortedEvents.sortedArrayUsingDescriptors(sortDescriptors as [AnyObject])
+        
+        return sortedEvents
+    }
     
     }
 
