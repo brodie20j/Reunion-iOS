@@ -24,6 +24,10 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
+//
+//
+//  Modified slightly for Carleton Reunion with additional eventDuration instance variable.
+//
 
 #import "MXLCalendarEvent.h"
 #import <EventKit/EventKit.h>
@@ -67,7 +71,7 @@
 
         // Set up the shared NSDateFormatter instance to convert the strings to NSDate objects
         dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setTimeZone:([NSTimeZone timeZoneWithName:timezoneID] ? [NSTimeZone timeZoneWithName:timezoneID] : [NSTimeZone timeZoneForSecondsFromGMT:0])];
+        [dateFormatter setTimeZone:NSWConstants.northfieldTimeZone];
 
         [dateFormatter setDateFormat:@"yyyyMMdd HHmmss"];
 
@@ -78,8 +82,10 @@
         self.eventCreatedDate = [self dateFromString:createdString];
         self.eventLastModifiedDate = [self dateFromString:lastModifiedString];
 
-        NSArray *matches = [durationString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"HMS"]];
+        // NSTimeInterval is just a number of seconds stored as a double
+        // durationString comes in format like "3H15M30S" to represent 3 hours, 15 minutes, and 30 seconds.
         
+        NSArray *matches = [durationString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"HMS"]];
         NSNumber *hours = matches[0];
         NSNumber *minutes = matches[1];
         NSNumber *seconds = matches[2];

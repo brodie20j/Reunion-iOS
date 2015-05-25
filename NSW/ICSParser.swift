@@ -5,6 +5,8 @@
 //  Created by Grant Terrien on 5/22/15.
 //  Copyright (c) 2015 BTIN. All rights reserved.
 //
+//  Creates NSWEvent objects for use by NewEventDataSource.
+//
 
 import Foundation
 

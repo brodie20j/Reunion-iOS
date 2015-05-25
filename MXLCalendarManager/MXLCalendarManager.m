@@ -22,6 +22,11 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
+//
+//
+//  Modified slightly for use in Carleton Reunion to also parse "DURATION" tag from iCalendar files
+//  Time zone is coded as a constant in NSWConstants
+//
 
 #import "MXLCalendarManager.h"
 #import <UIKit/UIKit.h>
