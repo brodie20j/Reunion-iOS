@@ -447,7 +447,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Schedule" id="tQt-TN-PWz">
                         <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="qh3-AQ-vcu"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="U5D-ii-GA6">
+                        <barButtonItem key="rightBarButtonItem" id="U5D-ii-GA6">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zui-lE-Od0">
                                 <rect key="frame" x="274" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

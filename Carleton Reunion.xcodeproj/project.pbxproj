@@ -599,7 +599,7 @@
 				ORGANIZATIONNAME = BTIN;
 				TargetAttributes = {
 					E2842ABE191A9991007FBD9B = {
-						DevelopmentTeam = Q422C87T92;
+						DevelopmentTeam = F32NER3Q9Y;
 					};
 					E2842AE2191A9992007FBD9B = {
 						TestTargetID = E2842ABE191A9991007FBD9B;
