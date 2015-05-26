@@ -44,6 +44,11 @@
 		8011D58F19400C77001D9DBD /* alarm_clock-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8011D58E19400C77001D9DBD /* alarm_clock-25.png */; };
 		8011D59119401C47001D9DBD /* phone1-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8011D59019401C47001D9DBD /* phone1-25.png */; };
 		B9E283BA1B07A0B200F54F33 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E283B91B07A0B200F54F33 /* TwitterViewController.swift */; };
+		BA601B2A1B14151A0087E796 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA601B261B14151A0087E796 /* Fabric.framework */; };
+		BA601B2B1B14151A0087E796 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA601B271B14151A0087E796 /* TwitterKit.framework */; };
+		BA601B2C1B14151A0087E796 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA601B281B14151A0087E796 /* TwitterKitResources.bundle */; };
+		BA601B2D1B14151A0087E796 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA601B291B14151A0087E796 /* TwitterCore.framework */; };
+		BA601B2F1B1415E90087E796 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA601B2E1B1415E90087E796 /* TweetTableViewController.swift */; };
 		BA9BB2FE1B10254B0097C9FB /* schedule.ics in Resources */ = {isa = PBXBuildFile; fileRef = BA9BB2FD1B10254B0097C9FB /* schedule.ics */; };
 		BAB5F4C11B0D89BA005FAA67 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = BAB5F4C01B0D89BA005FAA67 /* Pods */; };
 		BACC6C1E1B10306300ABA065 /* ICSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9BB2FB1B1025060097C9FB /* ICSParser.swift */; };
@@ -165,6 +170,11 @@
 		8011D59019401C47001D9DBD /* phone1-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone1-25.png"; sourceTree = "<group>"; };
 		B9E283B81B07A0B200F54F33 /* Carleton Reunion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carleton Reunion-Bridging-Header.h"; sourceTree = "<group>"; };
 		B9E283B91B07A0B200F54F33 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		BA601B261B14151A0087E796 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		BA601B271B14151A0087E796 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		BA601B281B14151A0087E796 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		BA601B291B14151A0087E796 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		BA601B2E1B1415E90087E796 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
 		BA9BB2FB1B1025060097C9FB /* ICSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICSParser.swift; sourceTree = "<group>"; };
 		BA9BB2FD1B10254B0097C9FB /* schedule.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schedule.ics; sourceTree = "<group>"; };
 		BAB5F4C01B0D89BA005FAA67 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
@@ -258,6 +268,9 @@
 				68EB971C193EAA2F0045640B /* QuartzCore.framework in Frameworks */,
 				68EB971A193EAA250045640B /* OpenGLES.framework in Frameworks */,
 				68EB9718193EAA0B0045640B /* libz.dylib in Frameworks */,
+				BA601B2D1B14151A0087E796 /* TwitterCore.framework in Frameworks */,
+				BA601B2B1B14151A0087E796 /* TwitterKit.framework in Frameworks */,
+				BA601B2A1B14151A0087E796 /* Fabric.framework in Frameworks */,
 				68EB9716193EA9FE0045640B /* libicucore.dylib in Frameworks */,
 				68EB9714193EA9E50045640B /* libc++.dylib in Frameworks */,
 				68EB9712193EA9D70045640B /* ImageIO.framework in Frameworks */,
@@ -368,6 +381,10 @@
 		E2842AC1191A9992007FBD9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA601B261B14151A0087E796 /* Fabric.framework */,
+				BA601B271B14151A0087E796 /* TwitterKit.framework */,
+				BA601B281B14151A0087E796 /* TwitterKitResources.bundle */,
+				BA601B291B14151A0087E796 /* TwitterCore.framework */,
 				BACC6C3A1B10339A00ABA065 /* MXLCalendarManager */,
 				FA36B634193FBABD0001C7E3 /* GoogleMaps.bundle */,
 				D69711B6193FB0D90092FA6D /* GoogleMaps.framework */,
@@ -533,6 +550,7 @@
 				2DBA1955C9B983DEC4C57B77 /* MapViewController.m */,
 				2DBA13A2ACE1AE8E36E36C90 /* MapViewController.h */,
 				B9E283B91B07A0B200F54F33 /* TwitterViewController.swift */,
+				BA601B2E1B1415E90087E796 /* TweetTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -561,6 +579,7 @@
 				E2842ABB191A9991007FBD9B /* Sources */,
 				E2842ABC191A9991007FBD9B /* Frameworks */,
 				E2842ABD191A9991007FBD9B /* Resources */,
+				BA601B251B1415020087E796 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -634,6 +653,7 @@
 				E2DC71F819B54C5000ED8C05 /* NSW Splash Screen.png in Resources */,
 				BAB5F4C11B0D89BA005FAA67 /* Pods in Resources */,
 				68E045E3191FF6B100B36423 /* events_old.ics in Resources */,
+				BA601B2C1B14151A0087E796 /* TwitterKitResources.bundle in Resources */,
 				E2217A8E19B552670017CBD4 /* calendarbutton.png in Resources */,
 				E2DC71FE19B54C7200ED8C05 /* up arrow.png in Resources */,
 				BA9BB2FE1B10254B0097C9FB /* schedule.ics in Resources */,
@@ -667,6 +687,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA601B251B1415020087E796 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 9face9a9ff87ffa1994beb932bfe264319fe0f81 6fe16f6ecf1f8e63499b1c0d3ea1c0bca9883d508550153234571705036ea825";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2842ABB191A9991007FBD9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -696,6 +732,7 @@
 				E2DC720019B54CD100ED8C05 /* EventDetailViewController.m in Sources */,
 				E220AD2A196C6AB00062BB40 /* CarlTermDetailViewController.m in Sources */,
 				2DBA1709FF76217A332E42CC /* BaseNSWDataSource.m in Sources */,
+				BA601B2F1B1415E90087E796 /* TweetTableViewController.swift in Sources */,
 				2DBA11AE1B9970A8E6772744 /* BaseNSWTableViewController.m in Sources */,
 				BACC6C1E1B10306300ABA065 /* ICSParser.swift in Sources */,
 				E2841CC0195CA2F40082BDB2 /* ContactButton.m in Sources */,

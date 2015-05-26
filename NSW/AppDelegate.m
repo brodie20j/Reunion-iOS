@@ -12,6 +12,8 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "NSWConstants.h"
 #import "SWRevealViewController.h"
+#import <Fabric/Fabric.h>
+#import <TwitterKit/TwitterKit.h>
 
 
 @implementation AppDelegate
@@ -37,7 +39,7 @@
     
     
     
-    
+    [Fabric with:@[TwitterKit]];
     return YES;
 }
 							

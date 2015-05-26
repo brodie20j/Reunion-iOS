@@ -28,6 +28,13 @@ class TwitterViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
+        let tweetTableViewController = TweetTableViewController()
+        let view = tweetTableViewController.view
+        self.addChildViewController(tweetTableViewController)
+        self.view.addSubview(view)
+        
+
+        
         }
     
 
