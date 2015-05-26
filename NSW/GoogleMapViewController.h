@@ -10,6 +10,6 @@
 #import "MapLocationsTableViewController.h"
 
 
-@interface GoogleMapViewController : UIViewController <MapLocationsTableViewControllerDelegate>
+@interface GoogleMapViewController : UIViewController <MapLocationsTableViewControllerDelegate, CLLocationManagerDelegate>
 
 @end

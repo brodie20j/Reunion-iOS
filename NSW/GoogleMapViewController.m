@@ -23,6 +23,8 @@
     GMSMarker *marker_;
     GMSCameraPosition *cameraPosition_;
     CLLocationManager *locationManager;
+    CLLocation *position;
+    BOOL didCheckIfNearCampus;
 }
 
 
@@ -44,10 +46,41 @@
     
     mapView_ = [aStoryboard instantiateViewControllerWithIdentifier:@"gMap"];
     
+    didCheckIfNearCampus = NO;
+    
+    
+    
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    locationManager.delegate = self;
+    // For iOS 8
+    if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [locationManager requestWhenInUseAuthorization];
+    }
+    [locationManager startUpdatingLocation];
+
+    
+    CLLocation *carletonPosition = [[CLLocation alloc]initWithLatitude:44.461 longitude:-93.1546];
+    
     
     cameraPosition_ = [GMSCameraPosition cameraWithLatitude:44.461
                                                             longitude:-93.1546
                                                                  zoom:17];
+    
+    
+    
+    
+    
+    
+    NSLog(@"%f", position.coordinate.latitude);
+    
+//    if (distance < 1000) {
+//        cameraPosition_ = [GMSCameraPosition cameraWithLatitude:position.coordinate.latitude longitude:position.coordinate.longitude zoom:17];
+//    }
+    
+    
+    
     
     int width = [UIScreen mainScreen].bounds.size.width;
     int height = [UIScreen mainScreen].bounds.size.height;
@@ -55,16 +88,11 @@
     mapView_ = [GMSMapView mapWithFrame:CGRectMake(0, 0, width,height) camera:cameraPosition_];
     mapView_.myLocationEnabled = YES;
     
-    locationManager = [[CLLocationManager alloc] init];
-    locationManager.distanceFilter = kCLDistanceFilterNone;
-    locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-    
-    if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-        [locationManager requestWhenInUseAuthorization];
-    }
     
     
-    [locationManager startUpdatingLocation];
+
+    
+    
     
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -130,8 +158,11 @@
     cameraPosition_ = [GMSCameraPosition cameraWithTarget:marker_.position zoom:17];
     
     if (marker_ != nil) {
-        // can I make this better?
+        // Slowed to allow user to orient themselves when map moves
+        [CATransaction begin];
+        [CATransaction setValue:[NSNumber numberWithFloat: 3.0] forKey:kCATransactionAnimationDuration];
         [mapView_ animateToCameraPosition:cameraPosition_];
+        [CATransaction commit];
         [mapView_ setSelectedMarker:marker_];
     }
     
@@ -157,6 +188,24 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+// Want to scroll to user location if they're on or near campus
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    if (!didCheckIfNearCampus) {
+        position = [locations lastObject];
+        CLLocation *carletonPosition = [[CLLocation alloc]initWithLatitude:44.461 longitude:-93.1546];
+        CLLocationDistance distance = [carletonPosition distanceFromLocation:position];
+        if (distance < 1000) {
+            cameraPosition_ = [GMSCameraPosition cameraWithLatitude:position.coordinate.latitude longitude:position.coordinate.longitude zoom:17];
+            [mapView_ animateToCameraPosition:cameraPosition_];
+        }
+        didCheckIfNearCampus = YES;
+    }
+    
 }
 
 @end
