@@ -22,6 +22,7 @@
     GMSMapView *mapView_;
     GMSMarker *marker_;
     GMSCameraPosition *cameraPosition_;
+    CLLocationManager *locationManager;
 }
 
 
@@ -54,7 +55,17 @@
     mapView_ = [GMSMapView mapWithFrame:CGRectMake(0, 0, width,height) camera:cameraPosition_];
     mapView_.myLocationEnabled = YES;
     
-
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    
+    if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [locationManager requestWhenInUseAuthorization];
+    }
+    
+    
+    [locationManager startUpdatingLocation];
+    
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button addTarget:self

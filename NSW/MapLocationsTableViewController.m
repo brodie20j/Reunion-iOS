@@ -14,6 +14,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 
 
+
 @interface MapLocationsTableViewController ()
 
 @end
@@ -41,8 +42,12 @@
     _locationManager.distanceFilter = kCLDistanceFilterNone;
     _locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
     
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [_locationManager requestWhenInUseAuthorization];
+    }
     
-    [_locationManager startUpdatingLocation];
+    
+    //[_locationManager startUpdatingLocation];
     
 }
 
@@ -64,11 +69,11 @@
     _locationsList = [[NSMutableArray alloc] init];
     
     // User Location
-    GMSMarker *myLocationMarker = [[GMSMarker alloc] init];
-    myLocationMarker.position = CLLocationCoordinate2DMake(_locationManager.location.coordinate.latitude, _locationManager.location.coordinate.longitude);
-    myLocationMarker.title = @"You are here";
-    MapLocation *myLocation = [[MapLocation alloc]initWithLocation:@"Where am I?" Coordinates:myLocationMarker];
-    [_locationsList addObject:myLocation];
+//    GMSMarker *myLocationMarker = [[GMSMarker alloc] init];
+//    myLocationMarker.position = CLLocationCoordinate2DMake(_locationManager.location.coordinate.latitude, _locationManager.location.coordinate.longitude);
+//    myLocationMarker.title = @"You are here";
+//    MapLocation *myLocation = [[MapLocation alloc]initWithLocation:@"Where am I?" Coordinates:myLocationMarker];
+//    [_locationsList addObject:myLocation];
     
     // Allen House
     GMSMarker *allenMarker = [[GMSMarker alloc] init];
@@ -643,6 +648,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MapLocation *selectedLocation = [_locationsList objectAtIndex:[indexPath row]];
+    
+
     
    
     [self.delegate addItemViewController:self didFinishEnteringItem:selectedLocation];
