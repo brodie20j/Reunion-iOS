@@ -557,13 +557,22 @@
                         <viewControllerLayoutGuide type="bottom" id="6ZU-JT-QUT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="suY-un-vdy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="94" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSx-xP-ob6">
+                                <rect key="frame" x="0.0" y="-8" width="320" height="512"/>
+                                <connections>
+                                    <segue destination="GVP-z4-nf1" kind="embed" id="G9Q-gR-NaE"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Twitter Feed" id="bD3-eV-tp8">
                         <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="4Me-mn-dwU"/>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="revealButtonItem" destination="4Me-mn-dwU" id="YTg-S9-Rkl"/>
                     </connections>
@@ -571,6 +580,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="is7-Ye-PsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1249" y="1359"/>
+        </scene>
+        <!--Tweet Table View Controller-->
+        <scene sceneID="ikd-6X-jc3">
+            <objects>
+                <viewController id="GVP-z4-nf1" customClass="TweetTableViewController" customModule="Carleton_Reunion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sck-mz-nhD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Juf-TM-b9O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XsI-qM-ODq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="512"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4X-2A-ZpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="1735"/>
         </scene>
         <!--"Speak Carleton"-->
         <scene sceneID="fed-4a-Tiz">
@@ -986,6 +1013,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1394" y="280"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K10-nd-K0Z">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="c35-Qr-78f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X3w-XY-SVG"/>
+                        <viewControllerLayoutGuide type="bottom" id="chu-cu-oRM"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EGu-xx-Oeg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRx-T1-u95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
