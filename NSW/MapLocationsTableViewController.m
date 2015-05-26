@@ -68,14 +68,8 @@
 {
     _locationsList = [[NSMutableArray alloc] init];
     
-    // User Location
-//    GMSMarker *myLocationMarker = [[GMSMarker alloc] init];
-//    myLocationMarker.position = CLLocationCoordinate2DMake(_locationManager.location.coordinate.latitude, _locationManager.location.coordinate.longitude);
-//    myLocationMarker.title = @"You are here";
-//    MapLocation *myLocation = [[MapLocation alloc]initWithLocation:@"Where am I?" Coordinates:myLocationMarker];
-//    [_locationsList addObject:myLocation];
     
-    // Cancel Menu
+    // Cancel Menu (not a real location)
     GMSMarker *cancelMarker = [[GMSMarker alloc]init];
     cancelMarker.title = @"Cancel";
     MapLocation *cancel = [[MapLocation alloc]initWithLocation:@"Cancel" Coordinates:cancelMarker];
@@ -647,7 +641,9 @@
 {
     LocationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
+    
     cell.locationLabel.text = [[_locationsList objectAtIndex:indexPath.row] maplocation];
+ 
     
     return cell;
 }
@@ -656,12 +652,17 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MapLocation *selectedLocation = [_locationsList objectAtIndex:[indexPath row]];
     
+    
+    // Do nothing if "cancel" is selected
     if ([indexPath row] == 0) {
+        [self.delegate addItemViewController:self didFinishEnteringItem:nil];
         [self dismissModalViewControllerAnimated:YES];
+        
     } else {
         [self.delegate addItemViewController:self didFinishEnteringItem:selectedLocation];
+        [self dismissModalViewControllerAnimated:YES];
+
     }
-    [self dismissModalViewControllerAnimated:YES];
 }
     
     
