@@ -5,7 +5,7 @@
 //  Created by Lab User on 6/3/14.
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
-//  ***Does not need additional work for Carleton Reunion***
+//  ***Slightly modified for better user experience in Carleton NSW***
 //
 
 #import "GoogleMapViewController.h"
@@ -206,6 +206,10 @@
         didCheckIfNearCampus = YES;
     }
     
+}
+- (IBAction)didTouchLocationButton:(id)sender {
+    cameraPosition_ = [GMSCameraPosition cameraWithLatitude:position.coordinate.latitude longitude:position.coordinate.longitude zoom:17];
+    [mapView_ animateToCameraPosition:cameraPosition_];
 }
 
 @end
