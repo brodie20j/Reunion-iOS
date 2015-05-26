@@ -10,6 +10,7 @@
 import UIKit
 class TwitterViewController: UIViewController {
 
+    @IBOutlet weak var embeddedView: UIView!
     @IBOutlet weak var revealButtonItem: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -27,11 +28,11 @@ class TwitterViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-
+        
+        
         
         }
     
-
 
 
 
@@ -54,10 +55,13 @@ class TwitterViewController: UIViewController {
         self.revealButtonItem.tintColor = NSWStyle.whiteColor()
 
         
-        
+    
 
     }
-
+    
+    func enableView() {
+        self.embeddedView.hidden = false
+    }
     /*
     // MARK: - Navigation
 

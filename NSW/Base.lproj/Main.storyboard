@@ -574,6 +574,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="embeddedView" destination="vSx-xP-ob6" id="OY9-3y-teL"/>
                         <outlet property="revealButtonItem" destination="4Me-mn-dwU" id="YTg-S9-Rkl"/>
                     </connections>
                 </viewController>

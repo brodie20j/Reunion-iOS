@@ -17,7 +17,11 @@ class TweetTableViewController: TWTRTimelineViewController {
         self.setTwitterFeed("CarletonCollege")
         
         
+        // We want to hide the view until the content is loaded
+        self.view.hidden = true
     }
+
+    
     
     //setTwitterFeed
     
@@ -34,15 +38,21 @@ class TweetTableViewController: TWTRTimelineViewController {
                 these requests are so small, and Twitter is updated so frequently, it makes sense to construct a new data
                 source each time to ensure that the feed the user gets is up-to-date
                 */
-                
+
                 self.dataSource = TWTRUserTimelineDataSource(screenName: timelineName, APIClient: client)
             } else {
                 println("error: %@", error.localizedDescription);
             }
         }
+        
     }
     
-        
-        
+    // Only enable view once content is being displayed (so we don't see an empty table for half a second)
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
+        self.view.hidden = false
+        return cell
+    }
+    
         
     }

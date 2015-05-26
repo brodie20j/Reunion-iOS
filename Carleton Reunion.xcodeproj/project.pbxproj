@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2DBA1128AA3820D3ACDF6DB2 /* NSWConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1B37E9654BD4635896D1 /* NSWConstants.m */; };
-		2DBA1144374E8617A6191C18 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA139D7276BDC39D4DB255 /* reveal-icon.png */; };
 		2DBA11AE1B9970A8E6772744 /* BaseNSWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1E9FDCADA3DDD5AC595A /* BaseNSWTableViewController.m */; };
 		2DBA12A52E9246896DE26E84 /* events.ics in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA1EE6E371CB5470BFB579 /* events.ics */; };
 		2DBA145C9F5E8FBDAF398B20 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1D9C44FC924E305DABBC /* SWRevealViewController.m */; };
@@ -18,7 +17,6 @@
 		2DBA1709FF76217A332E42CC /* BaseNSWDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA161F24FB78D7CD613800 /* BaseNSWDataSource.m */; };
 		2DBA174E2354E5295C25AF96 /* FLDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA174CF3B30C6834562744 /* FLDownloader.m */; };
 		2DBA1ADD2D7E87F1AEA01F08 /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA14AC9697B76D6FF558C1 /* ContactTableViewCell.m */; };
-		2DBA1BF8815FA54720707B52 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA1DBB01806B9A766482F6 /* reveal-icon@2x.png */; };
 		2DBA1DE1FBA75AE34934C6BC /* CarlTermTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA12024D13496A05CB72A7 /* CarlTermTableViewCell.m */; };
 		2DBA1ECE9BB7E4234609C451 /* events_test.ics in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA1C71116CB7163E1AC0A9 /* events_test.ics */; };
 		2DBA1ED00471D28CA268FA58 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1418FDE87099C2D4D6A4 /* EventTableViewCell.m */; };
@@ -117,7 +115,6 @@
 		2DBA11891644C1A2292AD911 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		2DBA12024D13496A05CB72A7 /* CarlTermTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarlTermTableViewCell.m; sourceTree = "<group>"; };
 		2DBA137AE7289011209C802F /* DataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceManager.m; sourceTree = "<group>"; };
-		2DBA139D7276BDC39D4DB255 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
 		2DBA1418FDE87099C2D4D6A4 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		2DBA146BBDAA372C1B5E4B37 /* FLDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDownloadTask.m; sourceTree = "<group>"; };
 		2DBA14AC9697B76D6FF558C1 /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
@@ -134,7 +131,6 @@
 		2DBA1C71116CB7163E1AC0A9 /* events_test.ics */ = {isa = PBXFileReference; lastKnownFileType = file.ics; path = events_test.ics; sourceTree = "<group>"; };
 		2DBA1D2363EB3A1744B9F1F9 /* NSWConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWConstants.h; sourceTree = "<group>"; };
 		2DBA1D9C44FC924E305DABBC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		2DBA1DBB01806B9A766482F6 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
 		2DBA1E15920BCF66B29F9D24 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		2DBA1E9FDCADA3DDD5AC595A /* BaseNSWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNSWTableViewController.m; sourceTree = "<group>"; };
 		2DBA1EE6E371CB5470BFB579 /* events.ics */ = {isa = PBXFileReference; lastKnownFileType = file.ics; path = events.ics; sourceTree = "<group>"; };
@@ -509,8 +505,6 @@
 				BA9BB2FD1B10254B0097C9FB /* schedule.ics */,
 				68E045E2191FF6B100B36423 /* events_old.ics */,
 				FA9DFDDC1921BDD200FC3A81 /* map.jpg */,
-				2DBA139D7276BDC39D4DB255 /* reveal-icon.png */,
-				2DBA1DBB01806B9A766482F6 /* reveal-icon@2x.png */,
 				2DBA1EE6E371CB5470BFB579 /* events.ics */,
 				2DBA1C71116CB7163E1AC0A9 /* events_test.ics */,
 			);
@@ -660,10 +654,8 @@
 				E2842AD6191A9992007FBD9B /* Main.storyboard in Resources */,
 				8011D58F19400C77001D9DBD /* alarm_clock-25.png in Resources */,
 				E2217A9419B565260017CBD4 /* mail icon.png in Resources */,
-				2DBA1144374E8617A6191C18 /* reveal-icon.png in Resources */,
 				8011D59119401C47001D9DBD /* phone1-25.png in Resources */,
 				8011D58D19400BB9001D9DBD /* clock-25.png in Resources */,
-				2DBA1BF8815FA54720707B52 /* reveal-icon@2x.png in Resources */,
 				E2DC71F419B54C1C00ED8C05 /* phone icon.png in Resources */,
 				2DBA12A52E9246896DE26E84 /* events.ics in Resources */,
 				2DBA1ECE9BB7E4234609C451 /* events_test.ics in Resources */,
