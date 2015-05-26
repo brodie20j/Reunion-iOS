@@ -57,7 +57,6 @@
 		BACC6C4B1B10417700ABA065 /* NewEventDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC6C4A1B10417700ABA065 /* NewEventDataSource.swift */; };
 		D69711B7193FB0D90092FA6D /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69711B6193FB0D90092FA6D /* GoogleMaps.framework */; };
 		E21CDE74191D47BF00884608 /* EventDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E21CDE73191D47BF00884608 /* EventDataSource.m */; };
-		E220AD2A196C6AB00062BB40 /* CarlTermDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E220AD29196C6AB00062BB40 /* CarlTermDetailViewController.m */; };
 		E2217A8E19B552670017CBD4 /* calendarbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E2217A8D19B552670017CBD4 /* calendarbutton.png */; };
 		E2217A9219B5561E0017CBD4 /* notify.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2217A9119B5561E0017CBD4 /* notify.wav */; };
 		E2217A9419B565260017CBD4 /* mail icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E2217A9319B565260017CBD4 /* mail icon.png */; };
@@ -97,7 +96,6 @@
 		FA9DFDDB1921B9A400FC3A81 /* NSWStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DFDDA1921B9A400FC3A81 /* NSWStyle.m */; };
 		FA9DFDDD1921BDD200FC3A81 /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9DFDDC1921BDD200FC3A81 /* map.jpg */; };
 		FA9DFDE91922D77F00FC3A81 /* CarlTermDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DFDE81922D77F00FC3A81 /* CarlTermDataSource.m */; };
-		FA9DFDEC1922D95400FC3A81 /* CarlTermViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DFDEB1922D95400FC3A81 /* CarlTermViewController.m */; };
 		FA9DFDEE1922DB5800FC3A81 /* CarlTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DFDED1922DB5800FC3A81 /* CarlTerm.m */; };
 /* End PBXBuildFile section */
 
@@ -185,8 +183,6 @@
 		D69711B6193FB0D90092FA6D /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		E21CDE72191D47BF00884608 /* EventDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDataSource.h; sourceTree = "<group>"; };
 		E21CDE73191D47BF00884608 /* EventDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDataSource.m; sourceTree = "<group>"; };
-		E220AD28196C6AB00062BB40 /* CarlTermDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarlTermDetailViewController.h; sourceTree = "<group>"; };
-		E220AD29196C6AB00062BB40 /* CarlTermDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarlTermDetailViewController.m; sourceTree = "<group>"; };
 		E2217A8D19B552670017CBD4 /* calendarbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarbutton.png; sourceTree = "<group>"; };
 		E2217A9119B5561E0017CBD4 /* notify.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notify.wav; sourceTree = "<group>"; };
 		E2217A9319B565260017CBD4 /* mail icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail icon.png"; sourceTree = "<group>"; };
@@ -246,8 +242,6 @@
 		FA9DFDE41922D67C00FC3A81 /* CarlTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarlTerm.h; sourceTree = "<group>"; };
 		FA9DFDE71922D77F00FC3A81 /* CarlTermDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarlTermDataSource.h; sourceTree = "<group>"; };
 		FA9DFDE81922D77F00FC3A81 /* CarlTermDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarlTermDataSource.m; sourceTree = "<group>"; };
-		FA9DFDEA1922D95400FC3A81 /* CarlTermViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarlTermViewController.h; sourceTree = "<group>"; };
-		FA9DFDEB1922D95400FC3A81 /* CarlTermViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarlTermViewController.m; sourceTree = "<group>"; };
 		FA9DFDED1922DB5800FC3A81 /* CarlTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarlTerm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -522,10 +516,6 @@
 				E27C228C197D8E6600126171 /* FaqViewController.m */,
 				E22D7578197EE0D30087AA70 /* FaqDetailViewController.h */,
 				E22D7579197EE0D30087AA70 /* FaqDetailViewController.m */,
-				FA9DFDEA1922D95400FC3A81 /* CarlTermViewController.h */,
-				FA9DFDEB1922D95400FC3A81 /* CarlTermViewController.m */,
-				E220AD28196C6AB00062BB40 /* CarlTermDetailViewController.h */,
-				E220AD29196C6AB00062BB40 /* CarlTermDetailViewController.m */,
 				FA9DFDCD192166A000FC3A81 /* ContactTableViewController.h */,
 				FA9DFDCE192166A000FC3A81 /* ContactTableViewController.m */,
 				E2841CBE195CA2F40082BDB2 /* ContactButton.h */,
@@ -706,7 +696,6 @@
 				E27C228D197D8E6600126171 /* FaqViewController.m in Sources */,
 				E2842AD3191A9992007FBD9B /* AppDelegate.m in Sources */,
 				E277ED6019859A8400366C1B /* LocationTableViewCell.m in Sources */,
-				FA9DFDEC1922D95400FC3A81 /* CarlTermViewController.m in Sources */,
 				E2842AD9191A9992007FBD9B /* EventListViewController.m in Sources */,
 				E27C228A197D888D00126171 /* FaqTableViewCell.m in Sources */,
 				E2842ACF191A9992007FBD9B /* main.m in Sources */,
@@ -717,7 +706,6 @@
 				6896DDE81921354D00570E6B /* ContactDataSource.m in Sources */,
 				E21CDE74191D47BF00884608 /* EventDataSource.m in Sources */,
 				E2DC720019B54CD100ED8C05 /* EventDetailViewController.m in Sources */,
-				E220AD2A196C6AB00062BB40 /* CarlTermDetailViewController.m in Sources */,
 				2DBA1709FF76217A332E42CC /* BaseNSWDataSource.m in Sources */,
 				BA601B2F1B1415E90087E796 /* TweetTableViewController.swift in Sources */,
 				2DBA11AE1B9970A8E6772744 /* BaseNSWTableViewController.m in Sources */,

@@ -75,6 +75,13 @@
 //    MapLocation *myLocation = [[MapLocation alloc]initWithLocation:@"Where am I?" Coordinates:myLocationMarker];
 //    [_locationsList addObject:myLocation];
     
+    // Cancel Menu
+    GMSMarker *cancelMarker = [[GMSMarker alloc]init];
+    cancelMarker.title = @"Cancel";
+    MapLocation *cancel = [[MapLocation alloc]initWithLocation:@"Cancel" Coordinates:cancelMarker];
+    [_locationsList addObject:cancel];
+    
+    
     // Allen House
     GMSMarker *allenMarker = [[GMSMarker alloc] init];
     allenMarker.position = CLLocationCoordinate2DMake(44.460106, -93.158276);
@@ -649,11 +656,11 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MapLocation *selectedLocation = [_locationsList objectAtIndex:[indexPath row]];
     
-
-    
-   
-    [self.delegate addItemViewController:self didFinishEnteringItem:selectedLocation];
-    
+    if ([indexPath row] == 0) {
+        [self dismissModalViewControllerAnimated:YES];
+    } else {
+        [self.delegate addItemViewController:self didFinishEnteringItem:selectedLocation];
+    }
     [self dismissModalViewControllerAnimated:YES];
 }
     

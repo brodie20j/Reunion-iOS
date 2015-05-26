@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseNSWDataSource.h"
-#import "CarlTermViewController.h"
 
 @interface CarlTermDataSource : BaseNSWDataSource
 

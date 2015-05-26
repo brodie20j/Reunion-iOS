@@ -31,16 +31,6 @@ class TwitterViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        
-//        let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
-//        activityIndicator.backgroundColor? = NSWStyle.lightBlueColor()
-//        activityIndicator.frame = CGRectMake(100, 100, 100, 100);
-//        activityIndicator.startAnimating()
-//        self.view.addSubview( activityIndicator )
-//        self.view.bringSubviewToFront(activityIndicator)
-        
-
-        
         }
     
 
