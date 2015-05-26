@@ -495,6 +495,7 @@
                             </button>
                             <button opaque="NO" alpha="0.89999999999999991" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBz-Si-WUs">
                                 <rect key="frame" x="274" y="28" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="20" height="20"/>
                                 <state key="normal" image="Define Location-100">
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -511,6 +512,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="locationButton" destination="lBz-Si-WUs" id="tRr-te-11s"/>
                         <outlet property="revealButtonItem" destination="j55-js-yWm" id="QYf-xt-Aap"/>
                         <segue destination="t9Y-38-qav" kind="modal" identifier="revealMapLocations" modalTransitionStyle="coverVertical" id="mi0-4T-3xN"/>
                     </connections>

@@ -10,6 +10,7 @@ import UIKit
 import TwitterKit
 
 class TweetTableViewController: TWTRTimelineViewController {
+    var activityIndicatorView: UIActivityIndicatorView?
     
     
     override func viewDidLoad() {

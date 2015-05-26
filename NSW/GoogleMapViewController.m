@@ -15,6 +15,7 @@
 #import "MapLocationsTableViewController.h"
 
 @interface GoogleMapViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *locationButton;
 @property (nonatomic) IBOutlet UIBarButtonItem *revealButtonItem;
 @end
 
@@ -48,7 +49,7 @@
     
     didCheckIfNearCampus = NO;
     
-    
+    self.locationButton.layer.cornerRadius = 5;
     
     locationManager = [[CLLocationManager alloc] init];
     locationManager.distanceFilter = kCLDistanceFilterNone;

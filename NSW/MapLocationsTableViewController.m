@@ -142,7 +142,7 @@
     GMSMarker *birdMarker = [[GMSMarker alloc] init];
     birdMarker.position = CLLocationCoordinate2DMake(44.459509, -93.155248);
     birdMarker.title = @"Bird House";
-    MapLocation *bird = [[MapLocation alloc]initWithLocation:@"Bird Hourse" Coordinates:birdMarker];
+    MapLocation *bird = [[MapLocation alloc]initWithLocation:@"Bird House" Coordinates:birdMarker];
     [_locationsList addObject:bird];
     
     // Boliou Hall
