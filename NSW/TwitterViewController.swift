@@ -10,8 +10,10 @@
 import UIKit
 class TwitterViewController: UIViewController {
 
-    @IBOutlet weak var embeddedView: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var revealButtonItem: UIBarButtonItem!
+    var tweetTableViewController: TweetTableViewController?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +32,22 @@ class TwitterViewController: UIViewController {
         
         
         
+//        let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
+//        activityIndicator.backgroundColor? = NSWStyle.lightBlueColor()
+//        activityIndicator.frame = CGRectMake(100, 100, 100, 100);
+//        activityIndicator.startAnimating()
+//        self.view.addSubview( activityIndicator )
+//        self.view.bringSubviewToFront(activityIndicator)
+        
+
         
         }
     
 
 
-
+    func stopActivityIndicator() {
+        self.activityIndicator.stopAnimating()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -58,18 +70,15 @@ class TwitterViewController: UIViewController {
     
 
     }
-    
-    func enableView() {
-        self.embeddedView.hidden = false
-    }
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "embedTweetTable" {
+            tweetTableViewController = segue.destinationViewController as? TweetTableViewController
+            tweetTableViewController?.setPVC(self)
+        }
+         
     }
-    */
 
 }

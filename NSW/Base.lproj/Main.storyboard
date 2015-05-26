@@ -575,9 +575,12 @@
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSx-xP-ob6">
                                 <rect key="frame" x="0.0" y="-8" width="320" height="512"/>
                                 <connections>
-                                    <segue destination="GVP-z4-nf1" kind="embed" id="G9Q-gR-NaE"/>
+                                    <segue destination="GVP-z4-nf1" kind="embed" identifier="embedTweetTable" id="G9Q-gR-NaE"/>
                                 </connections>
                             </containerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NVd-hV-14g">
+                                <rect key="frame" x="150" y="238" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -586,6 +589,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="NVd-hV-14g" id="Hjw-pz-PPQ"/>
                         <outlet property="embeddedView" destination="vSx-xP-ob6" id="OY9-3y-teL"/>
                         <outlet property="revealButtonItem" destination="4Me-mn-dwU" id="YTg-S9-Rkl"/>
                     </connections>

@@ -10,7 +10,8 @@ import UIKit
 import TwitterKit
 
 class TweetTableViewController: TWTRTimelineViewController {
-    var activityIndicatorView: UIActivityIndicatorView?
+    
+    var pvc: TwitterViewController?
     
     
     override func viewDidLoad() {
@@ -19,7 +20,10 @@ class TweetTableViewController: TWTRTimelineViewController {
         
         
         // We want to hide the view until the content is loaded
-        self.view.hidden = true
+        self.tableView.hidden = true
+        
+        
+        
     }
 
     
@@ -51,9 +55,14 @@ class TweetTableViewController: TWTRTimelineViewController {
     // Only enable view once content is being displayed (so we don't see an empty table for half a second)
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
-        self.view.hidden = false
+        self.tableView.hidden = false
+        pvc?.stopActivityIndicator()
         return cell
     }
     
-        
+    
+    
+    func setPVC(viewController: TwitterViewController) {
+        pvc = viewController
+    }
     }
