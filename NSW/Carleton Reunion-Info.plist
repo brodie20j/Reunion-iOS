@@ -56,6 +56,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>For location services in iOS 8</string>
+	<string>To show your location on campus.</string>
 </dict>
 </plist>

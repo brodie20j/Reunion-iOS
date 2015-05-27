@@ -331,8 +331,8 @@
     // Henrickson House
     GMSMarker *henricksonMarker = [[GMSMarker alloc] init];
     henricksonMarker.position = CLLocationCoordinate2DMake(44.458617, -93.158195);
-    henricksonMarker.title = @"Henrickson House";
-    MapLocation *henrickson = [[MapLocation alloc]initWithLocation:@"Henrickson House" Coordinates:henricksonMarker];
+    henricksonMarker.title = @"Henrickson House (Q&A House)";
+    MapLocation *henrickson = [[MapLocation alloc]initWithLocation:@"Henrickson (Q&A House) House" Coordinates:henricksonMarker];
     [_locationsList addObject:henrickson];
     
     // Hoppin House
@@ -521,7 +521,7 @@
     // Prentice House
     GMSMarker *prenticeMarker = [[GMSMarker alloc] init];
     prenticeMarker.position = CLLocationCoordinate2DMake(44.459940, -93.158371);
-    prenticeMarker.title = @"Prentice House (Q&A House)";
+    prenticeMarker.title = @"Prentice House";
     MapLocation *prentice = [[MapLocation alloc]initWithLocation:@"Prentice (Q&A) House" Coordinates:prenticeMarker];
     [_locationsList addObject:prentice];
     
