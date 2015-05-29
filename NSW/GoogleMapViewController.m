@@ -155,16 +155,27 @@
     
     [mapView_ clear];
     
+    GMSCameraPosition *currentPosition = cameraPosition_;
     marker_.map = mapView_;
     cameraPosition_ = [GMSCameraPosition cameraWithTarget:marker_.position zoom:17];
     
     if (marker_ != nil) {
-        // Slowed to allow user to orient themselves when map moves
+        // Slowed to allow user to orient themselves when map moves... Zooms out and then in
+        double intermediateLong = (currentPosition.target.longitude + cameraPosition_.target.longitude)/2;
+        double intermidateLat = (currentPosition.target.latitude + cameraPosition_.target.latitude)/2;
+        GMSCameraPosition *intermediatePosition = [GMSCameraPosition cameraWithLatitude:intermidateLat longitude:intermediateLong zoom:15];
+        [CATransaction setCompletionBlock:^{
+            [CATransaction begin];
+            [CATransaction setValue:[NSNumber numberWithFloat: 1.0] forKey:kCATransactionAnimationDuration];
+            [mapView_ animateToCameraPosition:cameraPosition_];
+            [CATransaction commit];
+            [mapView_ setSelectedMarker:marker_];
+        }];
         [CATransaction begin];
-        [CATransaction setValue:[NSNumber numberWithFloat: 3.0] forKey:kCATransactionAnimationDuration];
-        [mapView_ animateToCameraPosition:cameraPosition_];
+        [CATransaction setValue:[NSNumber numberWithFloat: 1.0] forKey:kCATransactionAnimationDuration];
+        [mapView_ animateToCameraPosition:intermediatePosition];
         [CATransaction commit];
-        [mapView_ setSelectedMarker:marker_];
+        
     }
     
 }
