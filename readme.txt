@@ -2,4 +2,4 @@ Carleton Reunion
 
 
 =======
-Comments at top of class implementation files (.m) marked "***" are from us.
+Made for Carleton Reunion 2015
