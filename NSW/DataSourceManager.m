@@ -55,6 +55,7 @@ static DataSourceManager *sharedDSManager = nil;
 #pragma mark ---- Getters
 
 - (EventDataSource *) getEventDataSource {
+    // We need to make this (and EventListViewController) explicitly return/use NewEventDataSource type
     return self.eventDataSource;
 }
 
