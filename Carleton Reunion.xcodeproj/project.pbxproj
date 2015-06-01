@@ -40,6 +40,7 @@
 		8011D58D19400BB9001D9DBD /* clock-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8011D58C19400BB9001D9DBD /* clock-25.png */; };
 		8011D58F19400C77001D9DBD /* alarm_clock-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8011D58E19400C77001D9DBD /* alarm_clock-25.png */; };
 		8011D59119401C47001D9DBD /* phone1-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8011D59019401C47001D9DBD /* phone1-25.png */; };
+		B9BBA1911B1BE08000F60D83 /* PhotoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BBA1901B1BE07F00F60D83 /* PhotoUploadViewController.swift */; };
 		B9E283BA1B07A0B200F54F33 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E283B91B07A0B200F54F33 /* TwitterViewController.swift */; };
 		BA601B2A1B14151A0087E796 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA601B261B14151A0087E796 /* Fabric.framework */; };
 		BA601B2B1B14151A0087E796 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA601B271B14151A0087E796 /* TwitterKit.framework */; };
@@ -159,6 +160,7 @@
 		8011D58C19400BB9001D9DBD /* clock-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-25.png"; sourceTree = "<group>"; };
 		8011D58E19400C77001D9DBD /* alarm_clock-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm_clock-25.png"; sourceTree = "<group>"; };
 		8011D59019401C47001D9DBD /* phone1-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone1-25.png"; sourceTree = "<group>"; };
+		B9BBA1901B1BE07F00F60D83 /* PhotoUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoUploadViewController.swift; sourceTree = "<group>"; };
 		B9E283B81B07A0B200F54F33 /* Carleton Reunion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carleton Reunion-Bridging-Header.h"; sourceTree = "<group>"; };
 		B9E283B91B07A0B200F54F33 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		BA601B261B14151A0087E796 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -530,6 +532,7 @@
 				2DBA11891644C1A2292AD911 /* MenuViewController.m */,
 				B9E283B91B07A0B200F54F33 /* TwitterViewController.swift */,
 				BA601B2E1B1415E90087E796 /* TweetTableViewController.swift */,
+				B9BBA1901B1BE07F00F60D83 /* PhotoUploadViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -707,6 +710,7 @@
 				E21CDE74191D47BF00884608 /* EventDataSource.m in Sources */,
 				E2DC720019B54CD100ED8C05 /* EventDetailViewController.m in Sources */,
 				2DBA1709FF76217A332E42CC /* BaseNSWDataSource.m in Sources */,
+				B9BBA1911B1BE08000F60D83 /* PhotoUploadViewController.swift in Sources */,
 				BA601B2F1B1415E90087E796 /* TweetTableViewController.swift in Sources */,
 				2DBA11AE1B9970A8E6772744 /* BaseNSWTableViewController.m in Sources */,
 				BACC6C1E1B10306300ABA065 /* ICSParser.swift in Sources */,
