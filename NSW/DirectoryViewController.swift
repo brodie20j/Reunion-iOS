@@ -13,7 +13,7 @@ class DirectoryViewController: UIViewController {
     
     @IBOutlet var directoryWebView: UIWebView!
     @IBOutlet weak var revealButtonItem: UIBarButtonItem!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

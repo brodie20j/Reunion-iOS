@@ -23,7 +23,7 @@ class AToZViewController: UIViewController {
         revealButtonItem.target = self.revealViewController()
         revealButtonItem.action = "revealToggle:"
         
-        
+
         
         self.navigationController?.navigationBar.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
