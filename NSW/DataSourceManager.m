@@ -2,6 +2,8 @@
 // Created by Alex Simonides on 6/1/14.
 // Copyright (c) 2014 BTIN. All rights reserved.
 //
+// Modified by Grant Terrien and Jonathan Brodie for Carleton Reunion
+// Added New Event Data Source and RSSManager to the Data Source Manager
 
 #import "DataSourceManager.h"
 #import "EventDataSource.h"

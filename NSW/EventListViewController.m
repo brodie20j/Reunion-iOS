@@ -46,7 +46,11 @@
     
     //do RSS updates here
     rssFeed =[[DataSourceManager sharedDSManager] getRSSManager];
+    rssFeed.getLatestFeed;
     NSDictionary *log=rssFeed.getFeedLog;
+    
+    //iterate through the keys and their values and display them in a popup-window
+    
     for (id key in log) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:key
                                                         message:log[key]

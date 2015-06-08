@@ -51,6 +51,9 @@ import Foundation
             var dateString:String=""
             var linkString:String=""
             var range=rawHTML.rangeOfString("<item>")!
+            
+            //get the substring from the <item> tag to the rest of the page
+            
             var jankystr=rawHTML.substringWithRange(Range<String.Index>(start: advance(range.endIndex,8), end: rawHTML.endIndex))
             var counter=0
             for char in jankystr {
@@ -62,8 +65,10 @@ import Foundation
                     counter=counter+1
                 }
             }
+            
             rawHTML=rawHTML.substringWithRange(Range<String.Index>(start: advance(range.endIndex,8+counter),end: rawHTML.endIndex))
             range=rawHTML.rangeOfString("<description>")!
+            //get the substring from the <description> tag to the rest of the page
             jankystr=rawHTML.substringWithRange(Range<String.Index>(start: range.endIndex, end: rawHTML.endIndex))
             counter=0
             for char in jankystr {
@@ -75,37 +80,7 @@ import Foundation
                     counter=counter+1
                 }
             }
-            rawHTML=rawHTML.substringWithRange(Range<String.Index>(start: advance(range.endIndex,counter),end: rawHTML.endIndex))
-            /*
-            range=rawHTML.rangeOfString("<pubDate>")!
-            println(range)
-            jankystr=rawHTML.substringWithRange(Range<String.Index>(start: range.endIndex, end: rawHTML.endIndex))
-            for char in jankystr {
-            if char=="<" {
-            break
-            }
-            else {
-            dateString.append(char)
-            }
-            }
-
-            range=rawHTML.rangeOfString("<link>")!
-            jankystr=rawHTML.substringWithRange(Range<String.Index>(start: range.endIndex, end: rawHTML.endIndex))
-            for char in jankystr {
-            if char=="<" {
-            break
-            }
-            else {
-            dateString.append(char)
-            }
-            }
-            */
-
-            
-            println(titleString)
-            println(descriptionString)
             self.feedLog[titleString]=descriptionString
-
             rawHTML=jankystr
         }
         
