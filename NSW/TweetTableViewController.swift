@@ -44,7 +44,7 @@ class TweetTableViewController: TWTRTimelineViewController {
                 source each time to ensure that the feed the user gets is up-to-date
                 */
 
-                self.dataSource = TWTRUserTimelineDataSource(screenName: timelineName, APIClient: client)
+                self.dataSource=TWTRSearchTimelineDataSource(searchQuery: "#carlreunion", APIClient: client)
             } else {
                 println("error: %@", error.localizedDescription);
             }

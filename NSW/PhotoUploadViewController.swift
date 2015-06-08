@@ -11,7 +11,7 @@ import UIKit
 class PhotoUploadViewController: UIViewController,UIWebViewDelegate {
     
     //This is a constant so we don't have some big ugly URL in the middle of the code
-    let urlConstant: String="https://apps.carleton.edu/reunion/photos/submit/?module_identifier=mcla-carletonPhotoUploadModule-mloc-main_post-mpar-40cd750bba9870f18aada2478b24840a&module_api=standalone"
+    let urlConstant: String="https://apps.carleton.edu/reunion/photos/submit/"
     
     @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet weak var photoWebView: UIWebView!
