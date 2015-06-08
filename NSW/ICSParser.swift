@@ -13,18 +13,28 @@ import Foundation
 
 @objc class ICSParser: NSObject {
     
-    
+    var documentsUrl: NSURL?
     
     init(eventDataSource: NewEventDataSource) {
-        let path = NSBundle.mainBundle().pathForResource("schedule", ofType: "ics")
+        super.init()
+        let reunionScheduleUrlString = "https://apps.carleton.edu/reunion/schedule/?start_date=2015-06-07&format=ical"
+        documentsUrl =  NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first as! NSURL
+        
+        
+        downloadScheduleSynchronously()
+        
+        let path = documentsUrl!.URLByAppendingPathComponent("schedule.ics").path
+        
+        //    let path = NSBundle.mainBundle().pathForResource("schedule", ofType: "ics")
         var err : NSError?
+        //     var content = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: &err)
         var content = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: &err)
         
         
         var calendarManager = MXLCalendarManager()
         
         
-        // This is asynchronous, race condition possible? Would have to rewrite much of third party library to not use
+        // This is asynchronous. Would have to rewrite much of third party library to not use
         // callback functions.
         calendarManager.parseICSString(content, withCompletionHandler: { (calendar: MXLCalendar!, error: NSError!) -> Void in
             var events = calendar.events
@@ -41,6 +51,30 @@ import Foundation
     }
     
     
+    func downloadScheduleSynchronously() {
+        if let scheduleUrl = NSURL(string: "https://apps.carleton.edu/reunion/schedule/?start_date=2015-06-07&format=ical") {
+            
+            if let scheduleDataFromUrl = NSData(contentsOfURL: scheduleUrl){
+                // after downloading your data you need to save it to your destination url
+                let destinationUrl = documentsUrl!.URLByAppendingPathComponent("schedule.ics")
+                if scheduleDataFromUrl.writeToURL(destinationUrl, atomically: true) {
+                    println("file saved at \(destinationUrl)")
+                }
+                else {
+                    println("error saving file")
+                }
+                return
+            }
+            
+            println("Can't download file. Check your internet connection.")
+        }
+        else {
+            println("error")
+        }
+    }
     
-
+    
+    
+    
+    
 }
