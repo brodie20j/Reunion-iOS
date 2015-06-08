@@ -40,6 +40,7 @@ class PhotoUploadViewController: UIViewController,UIWebViewDelegate {
     return true;
     }
     
+    //Start and stop the ActivityIndicator
     func webViewDidStartLoad(webView: UIWebView!) {
         self.activity.startAnimating()
         self.activity.hidden=false

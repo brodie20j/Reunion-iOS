@@ -23,11 +23,8 @@ import Foundation
         
         downloadScheduleSynchronously()
         
-        let path = documentsUrl!.URLByAppendingPathComponent("schedule.ics").path
-        
-        //    let path = NSBundle.mainBundle().pathForResource("schedule", ofType: "ics")
+        let path = documentsUrl!.URLByAppendingPathComponent("schedule.ics").pat
         var err : NSError?
-        //     var content = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: &err)
         var content = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: &err)
         
         
