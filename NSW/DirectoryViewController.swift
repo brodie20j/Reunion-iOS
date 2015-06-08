@@ -8,10 +8,11 @@
 
 import UIKit
 
-class DirectoryViewController: UIViewController {
+class DirectoryViewController: UIViewController,UIWebViewDelegate {
     let urlConstant: String="https://apps.carleton.edu/campus/directory/"
     
-    @IBOutlet var directoryWebView: UIWebView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    @IBOutlet weak var directoryWebView: UIWebView!
     @IBOutlet weak var revealButtonItem: UIBarButtonItem!
 
     override func viewDidLoad() {
@@ -26,7 +27,7 @@ class DirectoryViewController: UIViewController {
         
         
         self.navigationController?.navigationBar.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        
+        self.directoryWebView.delegate=self
         var request = NSURLRequest(URL: NSURL(string: self.urlConstant)!)
         self.directoryWebView.loadRequest(request)
     }
@@ -48,6 +49,26 @@ class DirectoryViewController: UIViewController {
         self.revealButtonItem.tintColor = NSWStyle.whiteColor()
     }
 
+    
+    func webView(webView: UIWebView!, didFailLoadWithError error: NSError!) {
+        print("Webview fail with error \(error)");
+    }
+    
+    func webView(webView: UIWebView!, shouldStartLoadWithRequest request: NSURLRequest!, navigationType: UIWebViewNavigationType)->Bool {
+        return true;
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView!) {
+        self.activity.startAnimating()
+        self.activity.hidden=false
+        print("Webview started Loading")
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView!) {
+        self.activity.stopAnimating()
+        self.activity.hidden=true
+        print("Webview did finish load")
+    }
     /*
     // MARK: - Navigation
 
