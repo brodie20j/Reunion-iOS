@@ -5,6 +5,7 @@
 //  Created by Jonathan Brodie on 5/24/15.
 //  Copyright (c) 2015 BTIN. All rights reserved.
 //
+//  Loads a Twitter Feed from fabric's framework
 
 import UIKit
 import TwitterKit
@@ -16,7 +17,7 @@ class TweetTableViewController: TWTRTimelineViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTwitterFeed("CarletonCollege")
+        self.setTwitterFeed("#carlreunion")
         
         
         // We want to hide the view until the content is loaded
@@ -44,7 +45,7 @@ class TweetTableViewController: TWTRTimelineViewController {
                 source each time to ensure that the feed the user gets is up-to-date
                 */
 
-                self.dataSource=TWTRSearchTimelineDataSource(searchQuery: "#carlreunion", APIClient: client)
+                self.dataSource=TWTRSearchTimelineDataSource(searchQuery: timelineName, APIClient: client)
             } else {
                 println("error: %@", error.localizedDescription);
             }

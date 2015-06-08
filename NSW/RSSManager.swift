@@ -5,6 +5,10 @@
 //  Created by Jonathan Brodie on 6/1/15.
 //  Copyright (c) 2015 BTIN. All rights reserved.
 //
+//  Manages the RSS Feed for Carleton Reunion.
+//  -keeps track of posts
+//  -parses RSS feed from url to get the title and description
+//  -this is accessed in EventListViewController.m, as that is when we check for updates
 
 import Foundation
 

@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 BTIN. All rights reserved.
 //
 //  Slightly modified for use in Carleton Reunion
-//
+//  In addition to the event data source, we now initialize an RSS Feed that is updated each time the view loads
+//  If there are any new alerts, send them to a user in a pop-up window.
 
 #import "EventListViewController.h"
 
