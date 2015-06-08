@@ -41,6 +41,7 @@ static DataSourceManager *sharedDSManager = nil;
     NSLog(@"Data Source Manager initialized.");
     if (self = [super init]) {
         self.eventDataSource = [[NewEventDataSource alloc] init];
+        self.rssSource=[[RSSManager alloc] init];
 //        self.contactDataSource = [[ContactDataSource alloc] init];
 //        self.carlTermDataSource = [[CarlTermDataSource alloc] init];
 //        self.faqDataSource = [[FaqDataSource alloc] init];

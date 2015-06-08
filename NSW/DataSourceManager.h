@@ -8,6 +8,8 @@
 #import "ContactDataSource.h"
 #import "CarlTermDataSource.h"
 #import "FaqDataSource.h"
+#import "Carleton_Reunion-Swift.h"
+
 
 
 @interface DataSourceManager : NSObject
@@ -18,5 +20,6 @@
 -(ContactDataSource *) getContactDataSource;
 -(CarlTermDataSource *) getCarlTermDataSource;
 -(FaqDataSource *) getFaqDataSource;
+-(RSSManager *) getRSSManager;
 
 @end

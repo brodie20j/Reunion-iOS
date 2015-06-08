@@ -19,11 +19,13 @@
 #import "iToast.h"
 #import "NSWConstants.h"
 #import "SWRevealViewController.h"
+#import "Carleton_Reunion-Swift.h"
 
 
 
 @interface EventListViewController () {
     EventDataSource *myEventDS;
+    RSSManager *rssFeed;
     NSDate *currentDate;
 }
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
@@ -41,8 +43,20 @@
 
     //Connect this VC to the shared DataSource
     myEventDS = [[DataSourceManager sharedDSManager] getEventDataSource];
-
     
+    //do RSS updates here
+    rssFeed =[[DataSourceManager sharedDSManager] getRSSManager];
+    NSDictionary *log=rssFeed.getFeedLog;
+    for (id key in log) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:key
+                                                        message:log[key]
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    rssFeed.clearLog;
+
     NSDateComponents *comps = [[NSDateComponents alloc] init];
     [comps setDay:18];
     [comps setMonth:6];
