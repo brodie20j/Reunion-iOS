@@ -13,9 +13,6 @@
     @property NewEventDataSource *eventDataSource;
     @property RSSManager *rssSource;
 
-    @property ContactDataSource *contactDataSource;
-    @property CarlTermDataSource *carlTermDataSource;
-    @property FaqDataSource *faqDataSource;
 @end
 
 
@@ -44,9 +41,6 @@ static DataSourceManager *sharedDSManager = nil;
     if (self = [super init]) {
         self.eventDataSource = [[NewEventDataSource alloc] init];
         self.rssSource=[[RSSManager alloc] init];
-//        self.contactDataSource = [[ContactDataSource alloc] init];
-//        self.carlTermDataSource = [[CarlTermDataSource alloc] init];
-//        self.faqDataSource = [[FaqDataSource alloc] init];
     }
     return self;
 }
@@ -64,17 +58,6 @@ static DataSourceManager *sharedDSManager = nil;
     return self.eventDataSource;
 }
 
-- (ContactDataSource *)getContactDataSource {
-    return self.contactDataSource;
-}
-
-- (CarlTermDataSource *)getCarlTermDataSource {
-    return self.carlTermDataSource;
-}
-
-- (FaqDataSource *)getFaqDataSource {
-    return self.faqDataSource;
-}
 - (RSSManager *)getRSSManager {
     return self.rssSource;
 }

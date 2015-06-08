@@ -5,9 +5,6 @@
 
 #import <Foundation/Foundation.h>
 #import "EventDataSource.h"
-#import "ContactDataSource.h"
-#import "CarlTermDataSource.h"
-#import "FaqDataSource.h"
 #import "Carleton_Reunion-Swift.h"
 
 
@@ -17,9 +14,6 @@
 + (id) sharedDSManager;
 
 -(EventDataSource *) getEventDataSource;
--(ContactDataSource *) getContactDataSource;
--(CarlTermDataSource *) getCarlTermDataSource;
--(FaqDataSource *) getFaqDataSource;
 -(RSSManager *) getRSSManager;
 
 @end

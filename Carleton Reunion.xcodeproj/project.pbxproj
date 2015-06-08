@@ -16,14 +16,10 @@
 		2DBA1604FAF3CAA6FA3288A8 /* FLDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA146BBDAA372C1B5E4B37 /* FLDownloadTask.m */; };
 		2DBA1709FF76217A332E42CC /* BaseNSWDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA161F24FB78D7CD613800 /* BaseNSWDataSource.m */; };
 		2DBA174E2354E5295C25AF96 /* FLDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA174CF3B30C6834562744 /* FLDownloader.m */; };
-		2DBA1ADD2D7E87F1AEA01F08 /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA14AC9697B76D6FF558C1 /* ContactTableViewCell.m */; };
-		2DBA1DE1FBA75AE34934C6BC /* CarlTermTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA12024D13496A05CB72A7 /* CarlTermTableViewCell.m */; };
 		2DBA1ECE9BB7E4234609C451 /* events_test.ics in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA1C71116CB7163E1AC0A9 /* events_test.ics */; };
 		2DBA1ED00471D28CA268FA58 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1418FDE87099C2D4D6A4 /* EventTableViewCell.m */; };
 		5809A9961B25455800A2BCFB /* AToZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809A9941B25455800A2BCFB /* AToZViewController.swift */; };
 		5809A9971B25455800A2BCFB /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809A9951B25455800A2BCFB /* DirectoryViewController.swift */; };
-		6896DDE71921354D00570E6B /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 6896DDE41921354D00570E6B /* Contact.m */; };
-		6896DDE81921354D00570E6B /* ContactDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6896DDE61921354D00570E6B /* ContactDataSource.m */; };
 		68E045E3191FF6B100B36423 /* events_old.ics in Resources */ = {isa = PBXBuildFile; fileRef = 68E045E2191FF6B100B36423 /* events_old.ics */; };
 		68E045E51920061700B36423 /* NSWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E045E41920061700B36423 /* NSWEvent.m */; };
 		68EB970A193EA9B10045640B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EB9709193EA9B10045640B /* AVFoundation.framework */; };
@@ -64,15 +60,9 @@
 		E2217A8E19B552670017CBD4 /* calendarbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E2217A8D19B552670017CBD4 /* calendarbutton.png */; };
 		E2217A9219B5561E0017CBD4 /* notify.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2217A9119B5561E0017CBD4 /* notify.wav */; };
 		E2217A9419B565260017CBD4 /* mail icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E2217A9319B565260017CBD4 /* mail icon.png */; };
-		E22D757A197EE0D30087AA70 /* FaqDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22D7579197EE0D30087AA70 /* FaqDetailViewController.m */; };
 		E23BB81B1985AF8800CF20BC /* MapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E23BB81A1985AF8800CF20BC /* MapLocation.m */; };
 		E277ED5A19858BCD00366C1B /* MapLocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E277ED5919858BCD00366C1B /* MapLocationsTableViewController.m */; };
 		E277ED6019859A8400366C1B /* LocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E277ED5F19859A8400366C1B /* LocationTableViewCell.m */; };
-		E27C227B197D7EC800126171 /* FaqDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E27C227A197D7EC800126171 /* FaqDataSource.m */; };
-		E27C2284197D81A400126171 /* FaqItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E27C2283197D81A400126171 /* FaqItem.m */; };
-		E27C228A197D888D00126171 /* FaqTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27C2289197D888D00126171 /* FaqTableViewCell.m */; };
-		E27C228D197D8E6600126171 /* FaqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27C228C197D8E6600126171 /* FaqViewController.m */; };
-		E2841CC0195CA2F40082BDB2 /* ContactButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2841CBF195CA2F40082BDB2 /* ContactButton.m */; };
 		E2842AC3191A9992007FBD9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2842AC2191A9992007FBD9B /* Foundation.framework */; };
 		E2842AC5191A9992007FBD9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2842AC4191A9992007FBD9B /* CoreGraphics.framework */; };
 		E2842AC7191A9992007FBD9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2842AC6191A9992007FBD9B /* UIKit.framework */; };
@@ -96,11 +86,8 @@
 		E2DC720019B54CD100ED8C05 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DC71FF19B54CD100ED8C05 /* EventDetailViewController.m */; };
 		E2E77B3A193EBA5E0079F420 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E77B39193EBA5E0079F420 /* CoreLocation.framework */; };
 		FA36B635193FBABD0001C7E3 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA36B634193FBABD0001C7E3 /* GoogleMaps.bundle */; };
-		FA9DFDCF192166A000FC3A81 /* ContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DFDCE192166A000FC3A81 /* ContactTableViewController.m */; };
 		FA9DFDDB1921B9A400FC3A81 /* NSWStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DFDDA1921B9A400FC3A81 /* NSWStyle.m */; };
 		FA9DFDDD1921BDD200FC3A81 /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9DFDDC1921BDD200FC3A81 /* map.jpg */; };
-		FA9DFDE91922D77F00FC3A81 /* CarlTermDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DFDE81922D77F00FC3A81 /* CarlTermDataSource.m */; };
-		FA9DFDEE1922DB5800FC3A81 /* CarlTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DFDED1922DB5800FC3A81 /* CarlTerm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,15 +102,12 @@
 
 /* Begin PBXFileReference section */
 		2DBA11891644C1A2292AD911 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		2DBA12024D13496A05CB72A7 /* CarlTermTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarlTermTableViewCell.m; sourceTree = "<group>"; };
 		2DBA137AE7289011209C802F /* DataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceManager.m; sourceTree = "<group>"; };
 		2DBA1418FDE87099C2D4D6A4 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		2DBA146BBDAA372C1B5E4B37 /* FLDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDownloadTask.m; sourceTree = "<group>"; };
-		2DBA14AC9697B76D6FF558C1 /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
 		2DBA161F24FB78D7CD613800 /* BaseNSWDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNSWDataSource.m; sourceTree = "<group>"; };
 		2DBA174CF3B30C6834562744 /* FLDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDownloader.m; sourceTree = "<group>"; };
 		2DBA1774783673FD841ABF78 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
-		2DBA17E6D9786CA5BEA75130 /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
 		2DBA188E05FA78B8CA88220B /* FLDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDownloader.h; sourceTree = "<group>"; };
 		2DBA199D76F580210C9F3B13 /* BaseNSWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNSWTableViewController.h; sourceTree = "<group>"; };
 		2DBA19B56A1927B2FA54136F /* FLDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDownloadTask.h; sourceTree = "<group>"; };
@@ -137,16 +121,11 @@
 		2DBA1E9FDCADA3DDD5AC595A /* BaseNSWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNSWTableViewController.m; sourceTree = "<group>"; };
 		2DBA1EE6E371CB5470BFB579 /* events.ics */ = {isa = PBXFileReference; lastKnownFileType = file.ics; path = events.ics; sourceTree = "<group>"; };
 		2DBA1F60FBF8244A097B7169 /* BaseNSWDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNSWDataSource.h; sourceTree = "<group>"; };
-		2DBA1FEB76C1602B32A6F545 /* CarlTermTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarlTermTableViewCell.h; sourceTree = "<group>"; };
 		2FA16562893AA81C1DECA3AA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		47DC1A96B2AC8D0985683A74 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5809A9941B25455800A2BCFB /* AToZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AToZViewController.swift; sourceTree = "<group>"; };
 		5809A9951B25455800A2BCFB /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 		5BE2E3248EC341149C22A407 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6896DDE31921354D00570E6B /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
-		6896DDE41921354D00570E6B /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
-		6896DDE51921354D00570E6B /* ContactDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDataSource.h; sourceTree = "<group>"; };
-		6896DDE61921354D00570E6B /* ContactDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDataSource.m; sourceTree = "<group>"; };
 		68E045E2191FF6B100B36423 /* events_old.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.ics; path = events_old.ics; sourceTree = "<group>"; };
 		68E045E41920061700B36423 /* NSWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWEvent.m; sourceTree = "<group>"; };
 		68EB9709193EA9B10045640B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -194,24 +173,12 @@
 		E2217A8D19B552670017CBD4 /* calendarbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarbutton.png; sourceTree = "<group>"; };
 		E2217A9119B5561E0017CBD4 /* notify.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notify.wav; sourceTree = "<group>"; };
 		E2217A9319B565260017CBD4 /* mail icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail icon.png"; sourceTree = "<group>"; };
-		E22D7578197EE0D30087AA70 /* FaqDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaqDetailViewController.h; sourceTree = "<group>"; };
-		E22D7579197EE0D30087AA70 /* FaqDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaqDetailViewController.m; sourceTree = "<group>"; };
 		E23BB8191985AF8800CF20BC /* MapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocation.h; sourceTree = "<group>"; };
 		E23BB81A1985AF8800CF20BC /* MapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocation.m; sourceTree = "<group>"; };
 		E277ED5819858BCD00366C1B /* MapLocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationsTableViewController.h; sourceTree = "<group>"; };
 		E277ED5919858BCD00366C1B /* MapLocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationsTableViewController.m; sourceTree = "<group>"; };
 		E277ED5E19859A8400366C1B /* LocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTableViewCell.h; sourceTree = "<group>"; };
 		E277ED5F19859A8400366C1B /* LocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTableViewCell.m; sourceTree = "<group>"; };
-		E27C2279197D7EC800126171 /* FaqDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaqDataSource.h; sourceTree = "<group>"; };
-		E27C227A197D7EC800126171 /* FaqDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaqDataSource.m; sourceTree = "<group>"; };
-		E27C2282197D81A400126171 /* FaqItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaqItem.h; sourceTree = "<group>"; };
-		E27C2283197D81A400126171 /* FaqItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaqItem.m; sourceTree = "<group>"; };
-		E27C2288197D888D00126171 /* FaqTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaqTableViewCell.h; sourceTree = "<group>"; };
-		E27C2289197D888D00126171 /* FaqTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaqTableViewCell.m; sourceTree = "<group>"; };
-		E27C228B197D8E6600126171 /* FaqViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaqViewController.h; sourceTree = "<group>"; };
-		E27C228C197D8E6600126171 /* FaqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaqViewController.m; sourceTree = "<group>"; };
-		E2841CBE195CA2F40082BDB2 /* ContactButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactButton.h; sourceTree = "<group>"; };
-		E2841CBF195CA2F40082BDB2 /* ContactButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactButton.m; sourceTree = "<group>"; };
 		E2842ABF191A9992007FBD9B /* Carleton Reunion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carleton Reunion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2842AC2191A9992007FBD9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2842AC4191A9992007FBD9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -241,16 +208,10 @@
 		E2DC71FF19B54CD100ED8C05 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
 		E2E77B39193EBA5E0079F420 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FA36B634193FBABD0001C7E3 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		FA9DFDCD192166A000FC3A81 /* ContactTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewController.h; sourceTree = "<group>"; };
-		FA9DFDCE192166A000FC3A81 /* ContactTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewController.m; sourceTree = "<group>"; };
 		FA9DFDD0192166C700FC3A81 /* NSWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWEvent.h; sourceTree = "<group>"; };
 		FA9DFDD91921B9A400FC3A81 /* NSWStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWStyle.h; sourceTree = "<group>"; };
 		FA9DFDDA1921B9A400FC3A81 /* NSWStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWStyle.m; sourceTree = "<group>"; };
 		FA9DFDDC1921BDD200FC3A81 /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
-		FA9DFDE41922D67C00FC3A81 /* CarlTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarlTerm.h; sourceTree = "<group>"; };
-		FA9DFDE71922D77F00FC3A81 /* CarlTermDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarlTermDataSource.h; sourceTree = "<group>"; };
-		FA9DFDE81922D77F00FC3A81 /* CarlTermDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarlTermDataSource.m; sourceTree = "<group>"; };
-		FA9DFDED1922DB5800FC3A81 /* CarlTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarlTerm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,14 +284,8 @@
 			children = (
 				2DBA1774783673FD841ABF78 /* EventTableViewCell.h */,
 				2DBA1418FDE87099C2D4D6A4 /* EventTableViewCell.m */,
-				E27C2288197D888D00126171 /* FaqTableViewCell.h */,
-				E27C2289197D888D00126171 /* FaqTableViewCell.m */,
-				2DBA1FEB76C1602B32A6F545 /* CarlTermTableViewCell.h */,
-				2DBA12024D13496A05CB72A7 /* CarlTermTableViewCell.m */,
 				E277ED5E19859A8400366C1B /* LocationTableViewCell.h */,
 				E277ED5F19859A8400366C1B /* LocationTableViewCell.m */,
-				2DBA17E6D9786CA5BEA75130 /* ContactTableViewCell.h */,
-				2DBA14AC9697B76D6FF558C1 /* ContactTableViewCell.m */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -466,14 +421,8 @@
 		FA9DFDDE1921C2BB00FC3A81 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6896DDE31921354D00570E6B /* Contact.h */,
-				6896DDE41921354D00570E6B /* Contact.m */,
 				FA9DFDD0192166C700FC3A81 /* NSWEvent.h */,
 				68E045E41920061700B36423 /* NSWEvent.m */,
-				E27C2282197D81A400126171 /* FaqItem.h */,
-				E27C2283197D81A400126171 /* FaqItem.m */,
-				FA9DFDE41922D67C00FC3A81 /* CarlTerm.h */,
-				FA9DFDED1922DB5800FC3A81 /* CarlTerm.m */,
 				E23BB8191985AF8800CF20BC /* MapLocation.h */,
 				E23BB81A1985AF8800CF20BC /* MapLocation.m */,
 			);
@@ -483,14 +432,8 @@
 		FA9DFDE01921C2EC00FC3A81 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
-				6896DDE51921354D00570E6B /* ContactDataSource.h */,
-				6896DDE61921354D00570E6B /* ContactDataSource.m */,
-				E27C2279197D7EC800126171 /* FaqDataSource.h */,
-				E27C227A197D7EC800126171 /* FaqDataSource.m */,
 				E21CDE72191D47BF00884608 /* EventDataSource.h */,
 				E21CDE73191D47BF00884608 /* EventDataSource.m */,
-				FA9DFDE71922D77F00FC3A81 /* CarlTermDataSource.h */,
-				FA9DFDE81922D77F00FC3A81 /* CarlTermDataSource.m */,
 				2DBA1F60FBF8244A097B7169 /* BaseNSWDataSource.h */,
 				2DBA161F24FB78D7CD613800 /* BaseNSWDataSource.m */,
 				2DBA137AE7289011209C802F /* DataSourceManager.m */,
@@ -523,14 +466,6 @@
 				68EB9720193EAAE00045640B /* GoogleMapViewController.m */,
 				E277ED5819858BCD00366C1B /* MapLocationsTableViewController.h */,
 				E277ED5919858BCD00366C1B /* MapLocationsTableViewController.m */,
-				E27C228B197D8E6600126171 /* FaqViewController.h */,
-				E27C228C197D8E6600126171 /* FaqViewController.m */,
-				E22D7578197EE0D30087AA70 /* FaqDetailViewController.h */,
-				E22D7579197EE0D30087AA70 /* FaqDetailViewController.m */,
-				FA9DFDCD192166A000FC3A81 /* ContactTableViewController.h */,
-				FA9DFDCE192166A000FC3A81 /* ContactTableViewController.m */,
-				E2841CBE195CA2F40082BDB2 /* ContactButton.h */,
-				E2841CBF195CA2F40082BDB2 /* ContactButton.m */,
 				E2842AD7191A9992007FBD9B /* EventListViewController.h */,
 				E2842AD8191A9992007FBD9B /* EventListViewController.m */,
 				E2842ADA191A9992007FBD9B /* EventDetailViewController.h */,
@@ -697,26 +632,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9DFDE91922D77F00FC3A81 /* CarlTermDataSource.m in Sources */,
 				68E045E51920061700B36423 /* NSWEvent.m in Sources */,
-				E27C2284197D81A400126171 /* FaqItem.m in Sources */,
 				E23BB81B1985AF8800CF20BC /* MapLocation.m in Sources */,
 				BACC6C461B1033DE00ABA065 /* MXLCalendarAttendee.m in Sources */,
-				FA9DFDCF192166A000FC3A81 /* ContactTableViewController.m in Sources */,
 				BACC6C471B1033E000ABA065 /* MXLCalendarEvent.m in Sources */,
 				FA9DFDDB1921B9A400FC3A81 /* NSWStyle.m in Sources */,
-				E27C228D197D8E6600126171 /* FaqViewController.m in Sources */,
 				E2842AD3191A9992007FBD9B /* AppDelegate.m in Sources */,
 				B94F97881B2550E800D4BF5C /* RSSManager.swift in Sources */,
 				E277ED6019859A8400366C1B /* LocationTableViewCell.m in Sources */,
 				E2842AD9191A9992007FBD9B /* EventListViewController.m in Sources */,
-				E27C228A197D888D00126171 /* FaqTableViewCell.m in Sources */,
 				E2842ACF191A9992007FBD9B /* main.m in Sources */,
 				BACC6C491B1033E600ABA065 /* NSTimeZone+ProperAbbreviation.m in Sources */,
-				E27C227B197D7EC800126171 /* FaqDataSource.m in Sources */,
-				FA9DFDEE1922DB5800FC3A81 /* CarlTerm.m in Sources */,
-				6896DDE71921354D00570E6B /* Contact.m in Sources */,
-				6896DDE81921354D00570E6B /* ContactDataSource.m in Sources */,
 				E21CDE74191D47BF00884608 /* EventDataSource.m in Sources */,
 				E2DC720019B54CD100ED8C05 /* EventDetailViewController.m in Sources */,
 				2DBA1709FF76217A332E42CC /* BaseNSWDataSource.m in Sources */,
@@ -724,20 +650,16 @@
 				BA601B2F1B1415E90087E796 /* TweetTableViewController.swift in Sources */,
 				2DBA11AE1B9970A8E6772744 /* BaseNSWTableViewController.m in Sources */,
 				BACC6C1E1B10306300ABA065 /* ICSParser.swift in Sources */,
-				E2841CC0195CA2F40082BDB2 /* ContactButton.m in Sources */,
 				2DBA1128AA3820D3ACDF6DB2 /* NSWConstants.m in Sources */,
 				BACC6C4B1B10417700ABA065 /* NewEventDataSource.swift in Sources */,
 				68EB9721193EAAE00045640B /* GoogleMapViewController.m in Sources */,
 				2DBA145C9F5E8FBDAF398B20 /* SWRevealViewController.m in Sources */,
 				2DBA1466DB064C56C6700DF2 /* MenuViewController.m in Sources */,
 				2DBA1ED00471D28CA268FA58 /* EventTableViewCell.m in Sources */,
-				2DBA1DE1FBA75AE34934C6BC /* CarlTermTableViewCell.m in Sources */,
 				BACC6C451B1033DC00ABA065 /* MXLCalendar.m in Sources */,
-				2DBA1ADD2D7E87F1AEA01F08 /* ContactTableViewCell.m in Sources */,
 				5809A9961B25455800A2BCFB /* AToZViewController.swift in Sources */,
 				BACC6C481B1033E300ABA065 /* MXLCalendarManager.m in Sources */,
 				5809A9971B25455800A2BCFB /* DirectoryViewController.swift in Sources */,
-				E22D757A197EE0D30087AA70 /* FaqDetailViewController.m in Sources */,
 				B9E283BA1B07A0B200F54F33 /* TwitterViewController.swift in Sources */,
 				2DBA174E2354E5295C25AF96 /* FLDownloader.m in Sources */,
 				E277ED5A19858BCD00366C1B /* MapLocationsTableViewController.m in Sources */,
