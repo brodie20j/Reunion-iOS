@@ -9,6 +9,8 @@
 
 @interface DataSourceManager ()
     @property NewEventDataSource *eventDataSource;
+    @property RSSManager *rssSource;
+
     @property ContactDataSource *contactDataSource;
     @property CarlTermDataSource *carlTermDataSource;
     @property FaqDataSource *faqDataSource;
@@ -69,5 +71,8 @@ static DataSourceManager *sharedDSManager = nil;
 
 - (FaqDataSource *)getFaqDataSource {
     return self.faqDataSource;
+}
+- (RSSManager *)getRSSManager {
+    return self.rssSource;
 }
 @end
