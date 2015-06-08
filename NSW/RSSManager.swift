@@ -30,16 +30,13 @@ import Foundation
     
     func getLatestFeed() {
         var html : NSString = NSString(contentsOfURL: NSURL(string:self.feedURL)!, encoding: NSUTF8StringEncoding, error: nil)! as NSString
-        println(html)
         self.currentFeed=html as! String
-        println(self.currentFeed)
         self.scrapeUpdates()
     }
     
     
     func scrapeUpdates() {
         var rawHTML:String=self.currentFeed
-        println("scraping")
         var titleString:String=""
         var descriptionString:String=""
         var dateString:String=""

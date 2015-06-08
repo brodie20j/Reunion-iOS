@@ -19,7 +19,6 @@ class PhotoUploadViewController: UIViewController,UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("0mph")
         // Do any additional setup after loading the view.
         self.setNavigationColors()
         self.navigationItem.title = "Photo Upload"
